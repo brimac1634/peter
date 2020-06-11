@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Suspense } from 'react';
+import { Switch, Route, Redirect } from 'react-router-dom';
+
+import Header from './components/header/header.component';
+import Footer from './components/footer/footer.component';
+import Loader from './components/loader/loader.component';
+import Home from './pages/home/home.component';
+import ErrorBoundary from './components/error-boundary/error-boundary.component';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div className='App'>
+    <Header />
+    <ErrorBoundary>
+      <Suspense fallback={<Loader />}>
+        <Switch>
+            <Route exact path='/' component={Home} />
+            {/* <Route exact path='/about' component={BeASidekick} /> */}
+            <Redirect to='/' />
+        </Switch>
+      </Suspense>
+    </ErrorBoundary>
+    <Footer />
+  </div>
+);
 
 export default App;
