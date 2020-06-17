@@ -2,28 +2,35 @@
 import i18n from 'i18next';
 import { initReactI18next } from "react-i18next";
 import XHR from "i18next-xhr-backend";
+// import LanguageDetector from 'i18next-browser-languagedetector';
 
-import translationEng from "./eng/translation.js";
-import translationTag from "./tag/translation.js";
+import translationEn from "./en/translation.js";
+import translationZh from "./zh/translation.js";
 
 i18n.use(XHR).use(initReactI18next).init({
     debug: true,
-    lng: "eng",
-    fallbackLng: "eng",
+    lng: 'en',
+    fallbackLng: 'en',
     keySeparator: false,
     interpolation: {
       escapeValue: false
     },
     resources: {
-      eng: {
-        translations: translationEng
+      en: {
+        translations: translationEn
       },
-      tag: {
-        translations: translationTag
+      zh: {
+        translations: translationZh
       },
     },
-    ns: ["translations"],
-    defaultNS: "translations"
+    ns: ['translations'],
+    defaultNS: 'translations',
+    // react: {
+    //   wait: true,
+    //   bindI18n: 'languageChanged loaded',
+    //   bindStore: 'added removed',
+    //   nsMode: 'default'
+    // }
   });
 
 export default i18n;
