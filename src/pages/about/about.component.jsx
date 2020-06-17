@@ -15,7 +15,7 @@ const About = () => {
             <section className='w-100 min-vh-100 flex items-center pa4'>
                 <div className='flex flex-column'>
                     <h1 className="f2 f1-l lh-title avenir fw4">
-                        {t('ABOUT US')}
+                        {t('about.ABOUT US')}
                     </h1>
                     <span className='f4'>"We come from one of the biggest</span>
                     <span className='f4'>F&B companies in Hong Kong"</span>
@@ -46,7 +46,7 @@ const About = () => {
                         {
                             SHOP_TYPES &&
                             SHOP_TYPES.map(type => (
-                                <li key={type} className="ttc lh-copy pa3 ba bl-0 bt-0 br-0 b--dotted b--black-30">{type}</li>
+                                <li key={type} className="ttc lh-copy pa3 ba bl-0 bt-0 br-0 b--dotted b--black-30">{t(`about.shop types.${type}`)}</li>
                             ))
                         }
                     </ul>

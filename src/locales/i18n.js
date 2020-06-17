@@ -11,7 +11,7 @@ i18n.use(XHR).use(initReactI18next).init({
     debug: true,
     lng: 'en',
     fallbackLng: 'en',
-    keySeparator: false,
+    keySeparator: ".",
     interpolation: {
       escapeValue: false
     },
