@@ -23,6 +23,7 @@ export default {
     // ABOUT PAGE
     'ABOUT': {
         'ABOUT US': 'ABOUT US',
+        'who are we': 'who are we', 
         'experience': 'experience',
         'SHOP_TYPES': {
             'Fast Food Shop': 'Fast Food Shop', 

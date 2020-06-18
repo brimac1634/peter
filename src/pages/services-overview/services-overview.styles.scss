@@ -3,3 +3,11 @@
     background-position: center;
     background: linear-gradient( rgba(250,250,250,0.5), rgba(250,250,250,0.5) ), url('../../assets/architecture.jpg');
 }
+
+.card {
+    transition: all 200ms ease-in-out; 
+    
+    &:hover {
+        box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 );
+    }
+}

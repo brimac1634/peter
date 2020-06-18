@@ -14,7 +14,7 @@ const About = () => {
     const { t } = useTranslation();
     return ( 
         <div className='vw-100 min-vh-100 overflow-hidden'>
-            <section className='w-100 min-vh-100 flex items-center pa4'>
+            <section className='w-100 min-vh-100 flex items-center pa4 pa6-ns'>
                 <div className='flex flex-column'>
                     <h1 className="f2 f1-l lh-title avenir fw4">
                         {t('ABOUT.ABOUT US')}
@@ -25,8 +25,8 @@ const About = () => {
             </section>
             <section className='slanted w-100 mb6 bg-moon-gray'>
                 <div className="pa3 pa4-ns">
-                    <h1 className='f2 tc lh-copy'>Who Are We</h1>
-                    <p className="tc f4 lh-copy measure">
+                    <h1 className='f2 tc lh-copy'>{t('ABOUT.who are we')}</h1>
+                    <p className="tc f4 lh-copy measure center">
                         Peter Ip & Associates Limited is a multi-discipline consultancy company providing full professional services for
                         the F&B industry. Established by Mr. Peter Ip, the ex-senior catering expert from Café de Coral Holdings
                         Limited, we serve our clients who would like to setup and operate their F&B shops including restaurants,
@@ -60,7 +60,7 @@ const About = () => {
                 <div className="ph2 pv1 ph3-ns">
                     <h1 className='white f2 tc lh-copy'>{t('ABOUT.organization structure')}</h1>
                 </div>
-                <ul className="list ph3 ph4-ns">
+                <ul className="list ph3 ph4-ns measure center">
                     {
                         TEAMS &&
                         TEAMS.map(({ title, details }, i) => (

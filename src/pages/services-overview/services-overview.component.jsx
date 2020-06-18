@@ -12,7 +12,7 @@ const Services = ({ history, match }) => {
     console.log(match.path)
     return ( 
         <div className='w-100 min-vh-100'>
-            <section className='w-100 min-vh-100 flex items-center pa4'>
+            <section className='w-100 min-vh-100 flex items-center pa4 pa6-ns'>
                 <div className='flex flex-column'>
                     <h1 className='f2 f1-l lh-title avenir fw4'>
                         {t('SERVICES.OUR SERVICES')}
@@ -25,7 +25,7 @@ const Services = ({ history, match }) => {
                     SERVICES.map(({ title, icon, url }, i) => (
                         <article 
                             key={i} 
-                            className='w5-ns ma4 bg-white br3 pa3 pa4-ns ba b--black-10 shadow-4 pointer'
+                            className='card w5-ns ma4 bg-white br3 pa3 pa4-ns ba b--black-10 pointer'
                             onClick={() => history.push(`${match.path}/${url}`)}
                         >
                             <div className='tc'>

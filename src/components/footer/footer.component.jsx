@@ -10,7 +10,7 @@ const Footer = ({ history, location }) => {
             <small className='f6 db tc'>© {new Date().getFullYear().toString()} <b className='ttu'>{t('FOOTER.Peter Ip & Associates Limited')}</b>{t('FOOTER., All Rights Reserved')}</small>
             <div className='tc mt3'>
                 <span 
-                    className='f6 dib ph2 link mid-gray dim'
+                    className='f6 dib ph2 link mid-gray dim pointer'
                     onClick={() => {
                         const page = location.pathname.slice(3, location.pathname.length);
                         history.push(`/${isEnglish ? 'zh' : 'en'}${page}`)

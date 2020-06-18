@@ -23,6 +23,7 @@ export default {
     // ABOUT
     'ABOUT': {
         'ABOUT US': '關於我們',
+        'who are we': '我們是誰', 
         'experience': '經驗',
         'SHOP_TYPES': {
             'Fast Food Shop': '快餐店', 

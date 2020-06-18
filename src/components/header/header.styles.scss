@@ -1,6 +1,6 @@
 .drop-menu {
     position: fixed;
-    top: -100%;
+    top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
@@ -11,15 +11,12 @@
     justify-content: center;
     align-items: flex-end;
     transition: all 600ms ease-in-out;
+    opacity: 0;
+    pointer-events: none;
 
     &.open {
         opacity: 1;
-        transform: translateY(100%);
-    }
-
-    &.close {
-        
-        transform: translateY(0);
+        pointer-events: all;
     }
 
     .nav-item {
