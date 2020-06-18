@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import React, { useState, useMemo } from 'react';
+import { withRouter } from 'react-router-dom';
 import { useTranslation } from 'react-i18next'; 
 
 import MenuButton from '../menu-button/menu-button.component';
@@ -15,9 +15,10 @@ const Header = ({ location, match, history }) => {
 
     const isEnglish = useMemo(() => i18n.language === 'en', [i18n.language]);
 
-    useEffect(() => {
+    const handleNav = nav => {
+        history.push(nav)
         setOpen(false);
-    }, [location.pathname])
+    }
 
     return ( 
         <header className='fixed top-0 left-0 bg-white w-100 ph3 pv2 pv2-ns ph4-m ph5-l flex items-center justify-between'>
@@ -26,17 +27,17 @@ const Header = ({ location, match, history }) => {
                     {
                         NAV &&
                         NAV.map((nav, i) => (
-                            <Link 
+                            <span 
                                 key={nav}
                                 className={`
                                     ttc no-underline black dib nav-item mr4 mb3
                                     ${open ? 'show-nav' : null}
                                 `} 
-                                to={`${match.url}/${nav}`} 
+                                onClick={() => handleNav(`${match.url}/${nav}`)} 
                                 title={nav}
                             >
-                                {t(`header.${nav}`)}
-                            </Link>
+                                {t(`HEADER.${nav}`)}
+                            </span>
                         ))
                     }
                     <span 
@@ -53,9 +54,9 @@ const Header = ({ location, match, history }) => {
                     </span>
                 </nav>
             </div>
-            <Link to='/' className='z-5'>
+            <div onClick={() => handleNav(match.path)}  className='z-5'>
                 <Logo className='w3 h3' />
-            </Link>
+            </div>
             <div className='w2 h2'>
                 <MenuButton showMenu={open} onClick={()=>setOpen(!open)} />
             </div>

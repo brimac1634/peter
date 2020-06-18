@@ -8,10 +8,11 @@ const Language = ({ match }) => {
     const { i18n } = useTranslation();
 
     useEffect(() => {
-        if (match.params.language !== i18n.language) {
-            i18n.changeLanguage(match.params.language);
+        const lang = match.path.slice(1, match.path.length);
+        if (lang !== i18n.language) {
+            i18n.changeLanguage(lang);
         }
-    }, [i18n, match.params])
+    }, [i18n, match.path])
 
     return ( 
         <Route path={match.path} component={Content} />

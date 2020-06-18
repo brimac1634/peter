@@ -12,7 +12,8 @@ const App = () => (
     <ErrorBoundary>
       <Suspense fallback={<Loader />}>
         <Switch>
-          <Route path='/:language' component={Language} />
+          <Route path='/en' component={Language} />
+          <Route path='/zh' component={Language} />
           <Redirect to='/en' />
         </Switch>
       </Suspense>

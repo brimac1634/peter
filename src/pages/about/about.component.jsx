@@ -15,7 +15,7 @@ const About = () => {
             <section className='w-100 min-vh-100 flex items-center pa4'>
                 <div className='flex flex-column'>
                     <h1 className="f2 f1-l lh-title avenir fw4">
-                        {t('about.ABOUT US')}
+                        {t('ABOUT.ABOUT US')}
                     </h1>
                     <span className='f4'>"We come from one of the biggest</span>
                     <span className='f4'>F&B companies in Hong Kong"</span>
@@ -46,7 +46,7 @@ const About = () => {
                         {
                             SHOP_TYPES &&
                             SHOP_TYPES.map(type => (
-                                <li key={type} className="ttc lh-copy pa3 ba bl-0 bt-0 br-0 b--dotted b--black-30">{t(`about.shop types.${type}`)}</li>
+                                <li key={type} className="ttc lh-copy pa3 ba bl-0 bt-0 br-0 b--dotted b--black-30">{t(`ABOUT.SHOP_TYPES.${type}`)}</li>
                             ))
                         }
                     </ul>
@@ -57,16 +57,16 @@ const About = () => {
                     <StructureIcon style={{width: '100%'}} />
                 </IconCircle>
                 <div className="ph2 pv1 ph3-ns">
-                    <h1 className='f2 tc lh-copy'>Organization Structure</h1>
+                    <h1 className='f2 tc lh-copy'>{t('ABOUT.organization structure')}</h1>
                 </div>
                 <ul className="list ph3 ph4-ns">
                     {
                         TEAMS &&
                         TEAMS.map(({ title, details }, i) => (
                             <li key={i} className="pa3 pa4-ns bb b--black-10">
-                                <b className="db f4 mb1">{title}</b>
+                                <b className="db f4 mb1">{t(`ABOUT.TEAMS.${title}`)}</b>
                                 <span className="f5 db lh-copy measure">
-                                    {details}
+                                    {t(`ABOUT.TEAMS.${details}`)}
                                 </span>
                             </li>
                         ))
@@ -78,14 +78,14 @@ const About = () => {
                     <QualificationIcon style={{width: '100%'}} />
                 </IconCircle>
                 <div className="ph2 pv1 ph3-ns">
-                    <h1 className='f2 tc lh-copy'>Professional Qualifications</h1>
+                    <h1 className='f2 tc lh-copy'>{t('ABOUT.professional qualifications')}</h1>
                 </div>
                 <div className="ph3 ph4-ns">
                     <ul className="list pl0 measure center">
                         {
                             QUALIFICATIONS &&
                             QUALIFICATIONS.map((item, i) => (
-                                <li key={i} className="ttc lh-copy pa3 ba bl-0 bt-0 br-0 b--dotted b--black-30">{item}</li>
+                                <li key={i} className="ttc lh-copy pa3 ba bl-0 bt-0 br-0 b--dotted b--black-30">{t(`ABOUT.QUALIFICATIONS.${item}`)}</li>
                             ))
                         }
                     </ul>

@@ -1,15 +1,15 @@
 export const TEAMS = [
     {
-        title: 'Team 1: Consultancy Team',
-        details: 'Our consultancy team provide professional advice to our clients regarding the current market.'
+        title: 'Team 1 Consultancy Team',
+        details: 'Our consultancy team provide professional advice to our clients regarding the current market'
     },
     {
-        title: 'Team 2: Technical Team',
-        details: 'Our technical team manages projects and cooridinates design production.'
+        title: 'Team 2 Technical Team',
+        details: 'Our technical team manages projects and cooridinates design production'
     },
     {
-        title: 'Team 3: Administrative Team',
-        details: 'Our Administrative team handles handles licensing applications.'
+        title: 'Team 3 Administrative Team',
+        details: 'Our Administrative team handles handles licensing applications'
     },
 ]
 
@@ -19,6 +19,6 @@ export const QUALIFICATIONS = [
     'EMSD Registered Electrical Contractor',
     'Registered Electrical Worker (Grade B)',
     'Registered Energy Assessor', 
-    'Member of USGBS - LEED (AP: Interior Design + Construction)',
+    'Member of USGBS - LEED (AP Interior Design + Construction)',
     'Estate Agent’s Individual Licence'
 ]

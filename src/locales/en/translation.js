@@ -1,14 +1,22 @@
 export default {
-    // header - nav
-    'header': {
+    // HEADER
+    'HEADER': {
         'home': 'home',
         'about': 'about',
         'services': 'services',
         'contact': 'contact',
     },
-    'about': {
+    // FOOTER
+    'FOOTER': {
+        'Peter Ip & Associates Limited': 'Peter Ip & Associates Limited',
+        ', All Rights Reserved': ', All Rights Reserved',
+        'email': 'email',
+        'phone': 'phone'
+    },
+    // ABOUT PAGE
+    'ABOUT': {
         'ABOUT US': 'ABOUT US',
-        'shop types': {
+        'SHOP_TYPES': {
             'Fast Food Shop': 'Fast Food Shop', 
             'Western Restaurant': 'Western Restaurant', 
             'Chinese Restaurant': 'Chinese Restaurant', 
@@ -21,6 +29,22 @@ export default {
             'Commercial Block Planning': 'Commercial Block Planning'
         },
         'organization structure': 'organization structure',
+        'TEAMS': {
+            'Team 1 Consultancy Team': 'Team 1: Consultancy Team',
+            'Our consultancy team provide professional advice to our clients regarding the current market': 'Our consultancy team provide professional advice to our clients regarding the current market.',
+            'Team 2 Technical Team': 'Team 2: Technical Team',
+            'Our technical team manages projects and cooridinates design production': 'Our technical team manages projects and cooridinates design production.',
+            'Team 3 Administrative Team': 'Team 3: Administrative Team',
+            'Our Administrative team handles handles licensing applications': 'Our Administrative team handles handles licensing applications.'
+        },
+        'professional qualifications': 'professional qualifications',
+        'QUALIFICATIONS': {
+            'EMSD Registered Electrical Contractor': 'EMSD Registered Electrical Contractor',
+            'Registered Electrical Worker (Grade B)': 'Registered Electrical Worker (Grade B)',
+            'Registered Energy Assessor': 'Registered Energy Assessor', 
+            'Member of USGBS - LEED (AP Interior Design + Construction)': 'Member of USGBS - LEED (AP: Interior Design + Construction)',
+            'Estate Agent’s Individual Licence': 'Estate Agent’s Individual Licence'
+        }
     }
     
 }
