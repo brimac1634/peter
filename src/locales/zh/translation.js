@@ -2,9 +2,9 @@ export default {
     // HEADER
     'HEADER': {
         'home': '主頁',
-        'about': '關於',
-        'services': '服務',
-        'contact': '聯絡',
+        'about': '關於我們',
+        'services': '我們的服務',
+        'contact': '聯絡我們',
     },
     // FOOTER
     'FOOTER': {
@@ -13,9 +13,17 @@ export default {
         'email': '電郵地址',
         'phone': '電話號碼'
     },
+    // HOMG
+    'HOME': {
+        'PETER IP &': '葉滿顧問',
+        'ASSOCIATES': '有限公司',
+        'LIMITED': '',
+        '-Since 2011': '自2011年'
+    },
     // ABOUT
     'ABOUT': {
         'ABOUT US': '關於我們',
+        'experience': '經驗',
         'SHOP_TYPES': {
             'Fast Food Shop': '快餐店', 
             'Western Restaurant': '西式餐廳', 
@@ -45,5 +53,9 @@ export default {
             'Member of USGBS - LEED (AP Interior Design + Construction)': '美國綠建築協會 - 專業人員: 室內設計+建造',
             'Estate Agent’s Individual Licence': '地產代理(個人)牌照'
         }
+    },
+    // SERVICE
+    'SERVICES': {
+        'OUR SERVICES': '我們的服務'
     }
 };

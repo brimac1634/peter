@@ -8,10 +8,12 @@ import { ReactComponent as ExperienceIcon } from '../../assets/portfolio.svg'
 
 import { TEAMS, SHOP_TYPES, QUALIFICATIONS } from './about.data';
 
+import './about.styles.scss';
+
 const About = () => {
     const { t } = useTranslation();
     return ( 
-        <div className='w-100 min-vh-100'>
+        <div className='vw-100 min-vh-100 overflow-hidden'>
             <section className='w-100 min-vh-100 flex items-center pa4'>
                 <div className='flex flex-column'>
                     <h1 className="f2 f1-l lh-title avenir fw4">
@@ -20,9 +22,8 @@ const About = () => {
                     <span className='f4'>"We come from one of the biggest</span>
                     <span className='f4'>F&B companies in Hong Kong"</span>
                 </div>
-                
             </section>
-            <section className='w-100 mb6 bg-moon-gray'>
+            <section className='slanted w-100 mb6 bg-moon-gray'>
                 <div className="pa3 pa4-ns">
                     <h1 className='f2 tc lh-copy'>Who Are We</h1>
                     <p className="tc f4 lh-copy measure">
@@ -35,10 +36,10 @@ const About = () => {
             </section>
             <section className='w-100 mb6'>
                 <IconCircle>
-                    <ExperienceIcon style={{width: '100%'}} />
+                    <ExperienceIcon />
                 </IconCircle>
                 <div className="ph2 pv1 ph3-ns">
-                    <h1 className='f2 tc lh-copy'>Experience</h1>
+                    <h1 className='f2 tc lh-copy'>{t('ABOUT.experience')}</h1>
                     <p className='tc f4'>Our team is well-experienced in dealing<br/> with various types of F&B shops...</p>
                 </div>
                 <div className="ph3 ph4-ns">
@@ -52,20 +53,20 @@ const About = () => {
                     </ul>
                 </div>
             </section>
-            <section className='w-100 mb6'>
+            <section className='w-100 mb6 bg-near-black pv4'>
                 <IconCircle>
-                    <StructureIcon style={{width: '100%'}} />
+                    <StructureIcon fill={'#ffffff'} />
                 </IconCircle>
                 <div className="ph2 pv1 ph3-ns">
-                    <h1 className='f2 tc lh-copy'>{t('ABOUT.organization structure')}</h1>
+                    <h1 className='white f2 tc lh-copy'>{t('ABOUT.organization structure')}</h1>
                 </div>
                 <ul className="list ph3 ph4-ns">
                     {
                         TEAMS &&
                         TEAMS.map(({ title, details }, i) => (
-                            <li key={i} className="pa3 pa4-ns bb b--black-10">
-                                <b className="db f4 mb1">{t(`ABOUT.TEAMS.${title}`)}</b>
-                                <span className="f5 db lh-copy measure">
+                            <li key={i} className="pa3 pa4-ns bb b--white-30">
+                                <b className="db f4 mb1 white">{t(`ABOUT.TEAMS.${title}`)}</b>
+                                <span className="f5 db lh-copy measure white">
                                     {t(`ABOUT.TEAMS.${details}`)}
                                 </span>
                             </li>
@@ -75,7 +76,7 @@ const About = () => {
             </section>
             <section className='w-100 mb6'>
                 <IconCircle>
-                    <QualificationIcon style={{width: '100%'}} />
+                    <QualificationIcon />
                 </IconCircle>
                 <div className="ph2 pv1 ph3-ns">
                     <h1 className='f2 tc lh-copy'>{t('ABOUT.professional qualifications')}</h1>

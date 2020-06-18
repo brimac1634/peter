@@ -2,8 +2,8 @@ export default {
     // HEADER
     'HEADER': {
         'home': 'home',
-        'about': 'about',
-        'services': 'services',
+        'about': 'about us',
+        'services': 'our services',
         'contact': 'contact',
     },
     // FOOTER
@@ -13,9 +13,17 @@ export default {
         'email': 'email',
         'phone': 'phone'
     },
+    // HOMG
+    'HOME': {
+        'PETER IP &': 'PETER IP &',
+        'ASSOCIATES': 'ASSOCIATES',
+        'LIMITED': 'LIMITED',
+        '-Since 2011': '-Since 2011'
+    },
     // ABOUT PAGE
     'ABOUT': {
         'ABOUT US': 'ABOUT US',
+        'experience': 'experience',
         'SHOP_TYPES': {
             'Fast Food Shop': 'Fast Food Shop', 
             'Western Restaurant': 'Western Restaurant', 
@@ -45,6 +53,9 @@ export default {
             'Member of USGBS - LEED (AP Interior Design + Construction)': 'Member of USGBS - LEED (AP: Interior Design + Construction)',
             'Estate Agent’s Individual Licence': 'Estate Agent’s Individual Licence'
         }
+    },
+    // SERVICE
+    'SERVICES': {
+        'OUR SERVICES': 'OUR SERVICES'
     }
-    
 }

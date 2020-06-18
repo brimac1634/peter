@@ -1,20 +1,18 @@
 import React from 'react';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
-const Services = () => {
-    return ( 
-        <div className='w-100 min-vh-100'>
-            <section className='w-100 min-vh-100 flex justify-center items-center pa4'>
-                <div className='flex flex-column'>
-                    {/* <h1 className="f2 f1-l lh-title avenir fw4">
-                        ABOUT US
-                    </h1>
-                    <span>We come from one of the biggest</span>
-                    <span>F&B companies in Hong Kong</span> */}
-                </div>
-                
-            </section>
-        </div>
-     );
-}
+import ServicesOverview from '../services-overview/services-overview.component';
+
+const Services = ({ match }) => (
+    <Switch>
+        <Route exact path={match.path} component={ServicesOverview} />
+        {/* <Route path={`${match.path}/licensing`} component={ServicesOverview} /> */}
+        {/* <Route path={`${match.path}/interior-design`} component={Language} /> */}
+        {/* <Route path={`${match.path}/e&m-design`} component={Language} /> */}
+        {/* <Route path={`${match.path}/project-management`} component={Language} /> */}
+        {/* <Route path={`${match.path}/other`} component={Language} /> */}
+        <Redirect to={match.path} />
+    </Switch>
+)
  
 export default Services;

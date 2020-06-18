@@ -16,7 +16,7 @@ const Content = ({ match }) => (
                 <Switch>
                     <Route exact path={match.path} component={Home} />
                     <Route exact path={`${match.path}/about`} component={About} />
-                    <Route exact path={`${match.path}/services`} component={Services} />
+                    <Route path={`${match.path}/services`} component={Services} />
                     <Redirect to={match.path} />
                 </Switch>
             </Suspense>

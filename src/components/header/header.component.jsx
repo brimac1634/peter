@@ -21,7 +21,7 @@ const Header = ({ location, match, history }) => {
     }
 
     return ( 
-        <header className='fixed top-0 left-0 bg-white w-100 ph3 pv2 pv2-ns ph4-m ph5-l flex items-center justify-between'>
+        <header className='fixed top-0 left-0 w-100 ph3 pv2 pv2-ns ph4-m ph5-l bg-white-90 flex items-center justify-between shadow-4'>
             <div className={`drop-menu ${open ? 'open' : 'close'}`}>
                 <nav className='fw6 ttu tracked flex flex-column items-end f3'>
                     {
@@ -30,7 +30,7 @@ const Header = ({ location, match, history }) => {
                             <span 
                                 key={nav}
                                 className={`
-                                    ttc no-underline black dib nav-item mr4 mb3
+                                    ttc no-underline black dib nav-item mr4 mb3 pointer
                                     ${open ? 'show-nav' : null}
                                 `} 
                                 onClick={() => handleNav(`${match.url}/${nav}`)} 
@@ -42,7 +42,7 @@ const Header = ({ location, match, history }) => {
                     }
                     <span 
                         className={`
-                            f6 fw6 ttc no-underline black dib nav-item mr4 mv3 
+                            f6 fw6 ttc no-underline black dib nav-item mr4 mv3 pointer
                             ${open ? 'show-nav' : null}
                         `} 
                         onClick={() => {
