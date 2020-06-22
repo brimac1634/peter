@@ -1,0 +1,19 @@
+.arrow {
+    opacity: 0;
+    animation: fade-down 800ms ease-out forwards;
+    animation-delay: 1000ms;
+    border-right: solid 2px black;
+    border-bottom: solid 2px black;
+
+
+    @keyframes fade-down {
+        0% {
+            transform: translateY(-150%) rotate(45deg);
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0) rotate(45deg);
+        }
+    }
+}

@@ -24,9 +24,9 @@ const Footer = ({ history, location }) => {
                     target='_blank' 
                     rel='noopener noreferrer'
                 >
-                    {t('FOOTER.email')}
+                    peteripadm@gmail.com
                 </a>
-                <a className='f6 dib ph2 link mid-gray dim' href='tel:+852-3954-5730'>{t('FOOTER.phone')}</a>
+                <a className='f6 dib ph2 link mid-gray dim' href='tel:+852-3954-5730'>+852-3954-5730</a>
             </div>
         </footer>
     )
