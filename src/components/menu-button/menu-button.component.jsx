@@ -19,14 +19,14 @@ const MenuButton = ({ location, history, match, open, setOpen }) => {
 	return (
 		<div className='w-100 h-100'>
 			<div className={`drop-menu ${open ? 'open' : null}`}>
-				<nav className='fw6 ttu tracked flex flex-column items-end f3'>
+				<nav className='fw6 ttu tracked flex flex-column items-end f3 ph3 ph5-l ph4-m'>
 					{
 						NAV &&
 						NAV.map((nav, i) => (
 							<span 
 								key={nav}
 								className={`
-									ttc no-underline black dib nav-item mr4 mb3 pointer
+									ttc no-underline black dib nav-item mb3 pointer f3 f1-ns
 									${open ? 'show-nav' : null}
 								`} 
 								onClick={() => handleNav(`${match.url}/${nav}`)} 
@@ -38,7 +38,7 @@ const MenuButton = ({ location, history, match, open, setOpen }) => {
 					}
 					<span 
 						className={`
-							f6 fw6 ttc no-underline black dib nav-item mr4 mv3 pointer
+							f6 f5-ns fw6 ttc no-underline black dib nav-item mv3 pointer
 							${open ? 'show-nav' : null}
 						`} 
 						onClick={() => {
@@ -46,7 +46,7 @@ const MenuButton = ({ location, history, match, open, setOpen }) => {
 							history.push(`/${isEnglish ? 'zh' : 'en'}${page}`)
 						}}
 					>
-						{isEnglish ? '中' : 'ENGLISH'}
+						{isEnglish ? '中文' : 'ENGLISH'}
 					</span>
 				</nav>
 			</div>

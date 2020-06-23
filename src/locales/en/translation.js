@@ -5,6 +5,7 @@ export default {
         'about': 'about us',
         'services': 'our services',
         'contact': 'contact',
+        'MENU': 'MENU'
     },
     // FOOTER
     'FOOTER': {
@@ -18,6 +19,9 @@ export default {
         'PETER IP &': 'PETER IP &',
         'ASSOCIATES': 'ASSOCIATES',
         'LIMITED': 'LIMITED',
+        'SEE MORE': 'SEE MORE',
+        'Hong Kongs F&B': 'Hong Kong\'s F&B',
+        'consultancy group': 'consultancy group'
     },
     // ABOUT PAGE
     'ABOUT': {
@@ -38,7 +42,6 @@ export default {
             'Commercial Block Planning': 'Commercial Block Planning'
         },
         'organization structure': 'organization structure',
-        'structure': 'structure',
         'TEAMS': {
             'Team 1 Consultancy Team': 'Team 1: Consultancy Team',
             'Our consultancy team provide professional advice to our clients regarding the current market': 'Our consultancy team provide professional advice to our clients regarding the current market.',
@@ -48,7 +51,6 @@ export default {
             'Our Administrative team handles handles licensing applications': 'Our Administrative team handles handles licensing applications.'
         },
         'professional qualifications': 'professional qualifications',
-        'qualifications': 'qualifications',
         'QUALIFICATIONS': {
             'EMSD Registered Electrical Contractor': 'EMSD Registered Electrical Contractor',
             'Registered Electrical Worker (Grade B)': 'Registered Electrical Worker (Grade B)',

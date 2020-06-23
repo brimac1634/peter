@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { withRouter } from 'react-router-dom';
+import { useTranslation } from 'react-i18next'; 
 
 import MenuButton from '../menu-button/menu-button.component';
 
@@ -12,7 +13,7 @@ import './header.styles.scss';
 const Header = ({ match, history, location }) => {
     const [show, setShow] = useState(false);
     const [open, setOpen] = useState(false);
-
+    const { t } = useTranslation();
     const scrollY = useScrollY();
 
     const isHome = useMemo(() => location.pathname.slice(3, location.pathname.length) === '', [location]);
@@ -22,7 +23,7 @@ const Header = ({ match, history, location }) => {
     }, [setShow, scrollY])
 
     return ( 
-        <header className={`header fixed top-0 left-0 w-100 ph3 pv2 pv2-ns ph4-m ph5-l flex items-center justify-between ${(show || !isHome) ? 'opaque' : null}`}>
+        <header className={`header fixed z-2 top-0 left-0 w-100 ph3 pv2 pv2-ns ph4-m ph5-l flex items-center justify-between ${(show || !isHome) ? 'opaque' : null}`}>
             <div 
                 onClick={() => {
                     history.push(match.path);
@@ -32,8 +33,11 @@ const Header = ({ match, history, location }) => {
             >
                 <Logo className='w3 h3' />
             </div>
-            <div className='w2 h2'>
-                <MenuButton open={open} setOpen={setOpen} />
+            <div className='flex items-center flex-end'>
+                <span className='menu-label mr2 silver f6'>{t('HEADER.MENU')}</span>
+                <div className='w2 h2'>
+                    <MenuButton open={open} setOpen={setOpen} />
+                </div>
             </div>
         </header>
      );

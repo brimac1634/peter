@@ -4,8 +4,8 @@ export default [
         items: [
             'who are we',
             'experience',
-            'qualifications',
-            'structure'
+            'professional qualifications',
+            'organization structure'
         ]
     },
     {
