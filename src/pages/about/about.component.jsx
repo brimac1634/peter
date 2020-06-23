@@ -34,7 +34,7 @@ const About = () => {
                 </div>
             </section>
             <section className='w-100 mb6'>
-                <IconCircle>
+                <IconCircle className='w4 h4'>
                     <ExperienceIcon />
                 </IconCircle>
                 <div className="ph2 pv1 ph3-ns">
@@ -53,7 +53,7 @@ const About = () => {
                 </div>
             </section>
             <section className='w-100 mb6 bg-near-black pv4'>
-                <IconCircle>
+                <IconCircle className='w4 h4'>
                     <StructureIcon fill={'#ffffff'} />
                 </IconCircle>
                 <div className="ph2 pv1 ph3-ns">
@@ -74,7 +74,7 @@ const About = () => {
                 </ul>
             </section>
             <section className='w-100 mb6'>
-                <IconCircle>
+                <IconCircle className='w4 h4'>
                     <QualificationIcon />
                 </IconCircle>
                 <div className="ph2 pv1 ph3-ns">

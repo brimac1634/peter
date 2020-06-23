@@ -4,7 +4,7 @@ export default {
         'home': 'home',
         'about': 'about us',
         'services': 'our services',
-        'contact': 'contact',
+        'contact': 'contact us',
         'MENU': 'MENU'
     },
     // FOOTER

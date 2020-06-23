@@ -13,9 +13,13 @@ const Enter = ({ children, enterStyle, className, ...otherProps }) => {
 		if (!enter) return;
 		const { top, height } = enter.current.getBoundingClientRect();
 		if (show) {
-			setShow(top < window.innerHeight)
+			if (window.innerHeight < top) {
+				setShow(false);
+			}
 		} else {
-			setShow(top + height * 0.6 < window.innerHeight)
+			if (top + height * 0.6 < window.innerHeight) {
+				setShow(true);
+			}
 		}
 	}, [scrollY,show])
 	
