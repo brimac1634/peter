@@ -18,11 +18,11 @@ export default {
         'PETER IP &': '葉滿顧問',
         'ASSOCIATES': '有限公司',
         'LIMITED': '',
-        '-Since 2011': '自2011年'
     },
     // ABOUT
     'ABOUT': {
         'ABOUT US': '關於我們',
+        'since 2011': '自2011年',
         'who are we': '我們是誰', 
         'experience': '經驗',
         'SHOP_TYPES': {
@@ -38,6 +38,7 @@ export default {
             'Commercial Block Planning': '商場策劃'
         },
         'organization structure': '組織結構',
+        'structure': '結構',
         'TEAMS': {
             'Team 1 Consultancy Team': '小組 1: 顧問組',
             'Our consultancy team provide professional advice to our clients regarding the current market': '按現時市場提供專業意見',
@@ -47,6 +48,7 @@ export default {
             'Our Administrative team handles handles licensing applications': '跟進各類牌照申請'
         },
         'professional qualifications': '專業資格',
+        'qualifications': '資格',
         'QUALIFICATIONS': {
             'EMSD Registered Electrical Contractor': '機電署合資格電業承辦商',
             'Registered Electrical Worker (Grade B)': 'B級電力工人',
@@ -57,6 +59,11 @@ export default {
     },
     // SERVICE
     'SERVICES': {
-        'OUR SERVICES': '我們的服務'
+        'OUR SERVICES': '我們的服務',
+        'licensing consultant': '食物牌照',
+        'interior design': '室內設計',
+        'e&m design': '機電設計及顧問',
+        'project management': '項目管理及施工',
+        'other': '其他'
     }
 };

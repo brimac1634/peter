@@ -18,11 +18,11 @@ export default {
         'PETER IP &': 'PETER IP &',
         'ASSOCIATES': 'ASSOCIATES',
         'LIMITED': 'LIMITED',
-        '-Since 2011': '-Since 2011'
     },
     // ABOUT PAGE
     'ABOUT': {
         'ABOUT US': 'ABOUT US',
+        'since 2011': 'Since 2011',
         'who are we': 'who are we', 
         'experience': 'experience',
         'SHOP_TYPES': {
@@ -38,6 +38,7 @@ export default {
             'Commercial Block Planning': 'Commercial Block Planning'
         },
         'organization structure': 'organization structure',
+        'structure': 'structure',
         'TEAMS': {
             'Team 1 Consultancy Team': 'Team 1: Consultancy Team',
             'Our consultancy team provide professional advice to our clients regarding the current market': 'Our consultancy team provide professional advice to our clients regarding the current market.',
@@ -47,6 +48,7 @@ export default {
             'Our Administrative team handles handles licensing applications': 'Our Administrative team handles handles licensing applications.'
         },
         'professional qualifications': 'professional qualifications',
+        'qualifications': 'qualifications',
         'QUALIFICATIONS': {
             'EMSD Registered Electrical Contractor': 'EMSD Registered Electrical Contractor',
             'Registered Electrical Worker (Grade B)': 'Registered Electrical Worker (Grade B)',
@@ -57,6 +59,11 @@ export default {
     },
     // SERVICE
     'SERVICES': {
-        'OUR SERVICES': 'OUR SERVICES'
+        'OUR SERVICES': 'OUR SERVICES',
+        'licensing consultant': 'licensing consultant',
+        'interior design': 'interior design',
+        'e&m design': 'e&m design',
+        'project management': 'project management',
+        'other': 'other'
     }
 }

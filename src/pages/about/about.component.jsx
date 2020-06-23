@@ -19,14 +19,13 @@ const About = () => {
                     <h1 className="f2 f1-l lh-title avenir fw4">
                         {t('ABOUT.ABOUT US')}
                     </h1>
-                    <span className='f4'>"We come from one of the biggest</span>
-                    <span className='f4'>F&B companies in Hong Kong"</span>
+                    <span className='f4'>{t('ABOUT.-Since 2011')}</span>
                 </div>
             </section>
             <section className='slanted w-100 mb6 bg-moon-gray'>
                 <div className="pa3 pa4-ns">
-                    <h1 className='f2 tc lh-copy'>{t('ABOUT.who are we')}</h1>
-                    <p className="tc f4 lh-copy measure center">
+                    <h1 className='f2 tc lh-copy avenir ttu'>{t('ABOUT.who are we')}</h1>
+                    <p className="tc f4 lh-copy measure center avenir">
                         Peter Ip & Associates Limited is a multi-discipline consultancy company providing full professional services for
                         the F&B industry. Established by Mr. Peter Ip, the ex-senior catering expert from Café de Coral Holdings
                         Limited, we serve our clients who would like to setup and operate their F&B shops including restaurants,
@@ -39,7 +38,7 @@ const About = () => {
                     <ExperienceIcon />
                 </IconCircle>
                 <div className="ph2 pv1 ph3-ns">
-                    <h1 className='f2 tc lh-copy'>{t('ABOUT.experience')}</h1>
+                    <h1 className='f2 tc lh-copy ttc avenir'>{t('ABOUT.experience')}</h1>
                     <p className='tc f4'>Our team is well-experienced in dealing<br/> with various types of F&B shops...</p>
                 </div>
                 <div className="ph3 ph4-ns">
@@ -58,7 +57,7 @@ const About = () => {
                     <StructureIcon fill={'#ffffff'} />
                 </IconCircle>
                 <div className="ph2 pv1 ph3-ns">
-                    <h1 className='white f2 tc lh-copy'>{t('ABOUT.organization structure')}</h1>
+                    <h1 className='white f2 tc lh-copy ttc avenir'>{t('ABOUT.organization structure')}</h1>
                 </div>
                 <ul className="list ph3 ph4-ns measure center">
                     {
@@ -79,7 +78,7 @@ const About = () => {
                     <QualificationIcon />
                 </IconCircle>
                 <div className="ph2 pv1 ph3-ns">
-                    <h1 className='f2 tc lh-copy'>{t('ABOUT.professional qualifications')}</h1>
+                    <h1 className='f2 tc lh-copy ttc avenir'>{t('ABOUT.professional qualifications')}</h1>
                 </div>
                 <div className="ph3 ph4-ns">
                     <ul className="list pl0 measure center">

@@ -22,7 +22,7 @@ const Header = ({ match, history, location }) => {
     }, [setShow, scrollY])
 
     return ( 
-        <header className='fixed top-0 left-0 w-100 ph3 pv2 pv2-ns ph4-m ph5-l flex items-center justify-between'>
+        <header className={`header fixed top-0 left-0 w-100 ph3 pv2 pv2-ns ph4-m ph5-l flex items-center justify-between ${(show || !isHome) ? 'opaque' : null}`}>
             <div 
                 onClick={() => {
                     history.push(match.path);
