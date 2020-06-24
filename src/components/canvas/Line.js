@@ -4,8 +4,8 @@ function Floater(x,y,xEnd,yEnd,c) {
   this.xEnd = xEnd;
   this.yEnd = yEnd;
   this.c = c;
-  this.dx = -0.1;
-  this.dy = -0.1;
+  this.dx = Math.random() < 0.5 ? -0.1 : 0.1;
+  this.dy = Math.random() < 0.5 ? -0.1 : 0.1;
   
   this.draw = function() {
     this.c.globalAlpha = this.alpha;
