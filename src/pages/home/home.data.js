@@ -6,7 +6,8 @@ export default [
             'experience',
             'professional qualifications',
             'organization structure'
-        ]
+        ],
+        icon: 'tie.svg'
     },
     {
         title: 'services',
@@ -15,6 +16,7 @@ export default [
             'interior design',
             'e&m design',
             'project management',
-        ]
+        ],
+        icon: 'portfolio.svg'
     },
 ]

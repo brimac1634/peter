@@ -2,6 +2,8 @@ import React from 'react';
 import { useTranslation } from 'react-i18next'; 
 
 import IconCircle from '../../components/icon-circle/icon-circle.component';
+import PageBottom from '../../components/page-bottom/page-bottom.component';
+import CustomButton from '../../components/custom-button/custom-button.component';
 import { ReactComponent as QualificationIcon } from '../../assets/curriculum.svg'
 import { ReactComponent as StructureIcon } from '../../assets/tie.svg'
 import { ReactComponent as ExperienceIcon } from '../../assets/portfolio.svg'
@@ -10,7 +12,7 @@ import { TEAMS, SHOP_TYPES, QUALIFICATIONS } from './about.data';
 
 import './about.styles.scss';
 
-const About = () => {
+const About = ({ match, history }) => {
     const { t } = useTranslation();
     return ( 
         <div className='vw-100 min-vh-100 overflow-hidden'>
@@ -19,7 +21,7 @@ const About = () => {
                     <h1 className="f2 f1-l lh-title avenir fw4">
                         {t('ABOUT.ABOUT US')}
                     </h1>
-                    <span className='f4'>{t('ABOUT.-Since 2011')}</span>
+                    <span className='f4'>{t('ABOUT.since 2011')}</span>
                 </div>
             </section>
             <section className='slanted w-100 mb6 bg-moon-gray'>
@@ -33,7 +35,7 @@ const About = () => {
                     </p>
                 </div>
             </section>
-            <section className='w-100 mb6'>
+            <section className='w-100 mb6-ns mb5'>
                 <IconCircle className='w4 h4'>
                     <ExperienceIcon />
                 </IconCircle>
@@ -52,8 +54,8 @@ const About = () => {
                     </ul>
                 </div>
             </section>
-            <section className='w-100 mb6 bg-near-black pv4'>
-                <IconCircle className='w4 h4'>
+            <section className='w-100 mb6-ns mb5 bg-near-black pv4'>
+                <IconCircle className='w4 h4 b--white'>
                     <StructureIcon fill={'#ffffff'} />
                 </IconCircle>
                 <div className="ph2 pv1 ph3-ns">
@@ -73,7 +75,7 @@ const About = () => {
                     }
                 </ul>
             </section>
-            <section className='w-100 mb6'>
+            <section className='w-100 mb6-ns mb5'>
                 <IconCircle className='w4 h4'>
                     <QualificationIcon />
                 </IconCircle>
@@ -91,6 +93,16 @@ const About = () => {
                     </ul>
                 </div>
             </section>
+            <PageBottom className='bg-moon-gray flex flex-column items-center'>
+                <span className='tc fw6 f3 f2-ns center db near-black'>{t('ABOUT.we have a diverse')}</span>
+                <span className='tc fw6 f3 f2-ns center db mb4 near-black'>{t('ABOUT.range of expertise')}</span>
+                <CustomButton 
+                    type='button' 
+                    onClick={()=>history.push(`${match.url.slice(0,3)}/services`)}
+                >
+                    {t('HEADER.services')}
+                </CustomButton>
+            </PageBottom>
         </div>
      );
 }

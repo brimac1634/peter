@@ -1,9 +1,13 @@
 .home-hero {
     background-attachment: fixed;
     background-position: center;
-    background: linear-gradient(rgba(250,250,250,0.8), rgba(250,250,250,0.8) ), url('../../assets/architecture.jpg');
+    background: linear-gradient(rgba(250,250,250,0.8), rgba(250,250,250,0.8) ), url('../../assets/architecture-mobile.jpg');
     z-index: -1;
     height: 120vh;
+
+    @media (min-width: 768px) {
+        background: linear-gradient(rgba(250,250,250,0.8), rgba(250,250,250,0.8) ), url('../../assets/architecture.jpg') no-repeat center top;
+    }
 
     .hovering {
         position: relative;
@@ -22,8 +26,4 @@
             box-shadow: 0 50px 40px rgba(0,0,0,0.5);
             }
     }
-}
-
-.enter-diamond {
-    padding-top: 10vw;
 }

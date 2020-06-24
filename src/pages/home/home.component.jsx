@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
+import React from 'react';
 import { useTranslation } from 'react-i18next'; 
 
 import Arrow from '../../components/arrow/arrow.component';
 import Enter from '../../components/enter/enter.component';
 import IconCircle from '../../components/icon-circle/icon-circle.component';
+import PageBottom from '../../components/page-bottom/page-bottom.component';
+import CustomButton from '../../components/custom-button/custom-button.component';
 import { ReactComponent as PhoneIcon } from '../../assets/phone.svg'
 import { ReactComponent as MailIcon } from '../../assets/mail.svg'
 import { ReactComponent as Logo } from '../../assets/logo.svg';
@@ -41,30 +42,35 @@ const Home = ({ match, history }) => {
                     <h1 className='f2 f1-ns tc lh-copy white avenir'>{t('HOME.Hong Kongs F&B')}<br/>{t('HOME.consultancy group')}</h1>
                 </div>
             </section>
-            <section className='w-100 vh-100 vh-75-ns cf ph2-ns flex justify-center items-center'>
+            <section className='w-100 min-vh-100 vh-75-ns cf ph2-ns flex justify-center items-center'>
                 <div className='cf center'>
                     {
                         HOME_LIST &&
-                        HOME_LIST.map(({ title, items }, i) => (
+                        HOME_LIST.map(({ title, items, icon }, i) => (
                             <Enter enterStyle={i % 2 ? 'fade-left' : 'fade-right'} key={title} className='fl w-50-ns ma0'>
                                 <div className='fl w-100 pa4'>
                                     <article  
                                         className='card w6-ns ma4s bg-white br3 pa3 pa4-ns ba b--black-10 pointer'
                                         onClick={() => history.push(`${match.path}/${title}`)}
                                     >
+                                        <IconCircle className='w3 h3 w4-ns h4-ns'>
+                                            <img src={require(`../../assets/${icon}`)} alt={title} />
+                                        </IconCircle>
                                         <h1 className='f3 mb2 ttc bb b--custom-yellow avenir pv1 bw1 near-black'>{t(`HEADER.${title}`)}</h1>
                                         <ul className='list flex flex-wrap items-center pa0'>
                                             {
                                                 items &&
                                                 items.map((item, i) => (
-                                                    <li key={i} className="ttc lh-copy fl w-50 pa2 tc">
+                                                    <li key={i} className="ttc lh-copy fl w-50 pa2 tc f4">
                                                         <span className='fw9'>- </span>
                                                         {t(`${title.toUpperCase()}.${item}`)}
                                                     </li>
                                                 ))
                                             }
                                         </ul>
-                                        <span className='silver tcu tc center db'>{t('HOME.SEE MORE')} {'>'}</span>
+                                        <CustomButton className='center db mt4' type='button' >
+                                            {t('HOME.SEE MORE')}
+                                        </CustomButton>
                                     </article>
                                 </div>
                             </Enter>
@@ -72,35 +78,32 @@ const Home = ({ match, history }) => {
                     }
                 </div>
             </section>
-            <Enter enterStyle='slide-up'>
-                <section className='w-100 enter-diamond'>
-                    <div className="ph2 pt1 pb5 ph3-ns bg-moon-gray diamond-top">
-                        <h1 className='f2 tc lh-copy ttc avenir mt0 near-black'>{t('HEADER.contact')}</h1>
-                        <div className='flex justify-center items-center mt2'>
-                            <a
-                                className='flex flex-column items-center w-50 no-underline link'
-                                href='mailto:peteripadm@gmail.com' 
-                                target='_blank' 
-                                rel='noopener noreferrer'
-                            >
-                                <IconCircle className='w3 h3 w4-ns h4-ns bg-white' clickable>
-                                    <MailIcon />
-                                </IconCircle>
-                                <span className='mt3 fw6 f4 near-black dn db-ns nowrap'>peteripadm@gmail.com</span>
-                            </a>
-                            <a
-                                className='flex flex-column items-center w-50 no-underline link'
-                                href='tel:+852-3954-5730'
-                            >
-                                <IconCircle className='w3 h3 w4-ns h4-ns bg-white' clickable>
-                                    <PhoneIcon />
-                                </IconCircle>
-                                <span className='mt3 fw6 f4 near-black dn db-ns nowrap'>+852-3954-5730</span>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-            </Enter>
+            <PageBottom className='bg-moon-gray'>
+                <h1 className='f2 tc lh-copy ttc avenir mt0 mb1 near-black'>{t('HEADER.contact')}</h1>
+                <span className='tc f5 center db mb4 near-black'>{t('HOME.For enquiries, please contact us')}:</span>
+                <div className='flex justify-center items-center mt2'>
+                    <a
+                        className='flex flex-column items-center w-50 no-underline link'
+                        href='mailto:peteripadm@gmail.com' 
+                        target='_blank' 
+                        rel='noopener noreferrer'
+                    >
+                        <IconCircle className='w3 h3 w4-ns h4-ns bg-near-black card'>
+                            <MailIcon fill='#ffffff' />
+                        </IconCircle>
+                        <span className='mt3 fw6 f4 near-black dn db-ns nowrap'>peteripadm@gmail.com</span>
+                    </a>
+                    <a
+                        className='flex flex-column items-center w-50 no-underline link'
+                        href='tel:+852-3954-5730'
+                    >
+                        <IconCircle className='w3 h3 w4-ns h4-ns bg-near-black card'>
+                            <PhoneIcon fill='#ffffff' />
+                        </IconCircle>
+                        <span className='mt3 fw6 f4 near-black dn db-ns nowrap'>+852-3954-5730</span>
+                    </a>
+                </div>
+            </PageBottom>
         </div>
      );
 }

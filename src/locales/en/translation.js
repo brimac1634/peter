@@ -21,7 +21,8 @@ export default {
         'LIMITED': 'LIMITED',
         'SEE MORE': 'SEE MORE',
         'Hong Kongs F&B': 'Hong Kong\'s F&B',
-        'consultancy group': 'consultancy group'
+        'consultancy group': 'consultancy group',
+        'For enquiries, please contact us': 'For enquiries, please contact us'
     },
     // ABOUT PAGE
     'ABOUT': {
@@ -57,7 +58,9 @@ export default {
             'Registered Energy Assessor': 'Registered Energy Assessor', 
             'Member of USGBS - LEED (AP Interior Design + Construction)': 'Member of USGBS - LEED (AP: Interior Design + Construction)',
             'Estate Agent’s Individual Licence': 'Estate Agent’s Individual Licence'
-        }
+        },
+        'we have a diverse': 'We have a diverse',
+        'range of expertise': 'range of expertise...'
     },
     // SERVICE
     'SERVICES': {
@@ -67,5 +70,61 @@ export default {
         'e&m design': 'e&m design',
         'project management': 'project management',
         'other': 'other'
+    },
+    // SERVICE DETAILS
+    'SERVICE DETAILS': {
+        // LICENSING
+        'New application': 'New application',
+        'Providing feasibility studies for E&M and licensing issues': 'Providing feasibility studies for E&M and licensing issues',
+        'Advice on shop front design, kitchen layout in compliance with current regulations': 'Advice on shop front design, kitchen layout in compliance with current regulations',
+        'Providing expert advice for restaurant investment': 'Providing expert advice for restaurant investment',
+        'Food Licence application': 'Food Licence application',
+        'Licensing Plan & Documents': 'Licensing Plan & Documents',
+        'Modification': 'Modification',
+        'Alteration of Licence application': 'Alteration of Licence application',
+        'Transfer & maintenance': 'Transfer & maintenance',
+        'Transfer application': 'Transfer application',
+        'Licensing Renewal': 'Licensing Renewal',
+        'Hygiene Manager / Hygiene Supervisor / Nominated Manager Updating': 'Hygiene Manager / Hygiene Supervisor / Nominated Manager Updating',
+        'Liquor license': 'Liquor license',
+        'Reserved Licencee Application': 'Reserved Licencee Application',
+        'Permit': 'Permit',
+        'Restricted food including Icecream, Sushi/Sashimi, etc': 'Restricted food including Icecream, Sushi/Sashimi etc',
+        'Discharge licence': 'Discharge licence',
+        // INTERIOR DESIGN
+        'new shop and modification': 'new shop and modification',
+        'Tender Bidding Use Design Package': 'Tender Bidding Use Design Package',
+        'Feasibility studies of space usage': 'Feasibility studies of space usage',
+        'Provide environment enhancement advice': 'Provide environment enhancement advice',
+        'Design submission package for landlord’s approval': 'Design submission package for landlord’s approval',
+        'Brand image enhancement': 'Brand image enhancement',
+        // E&M
+        'e&m design': 'e&m design',
+        'Before shop renting': 'Before shop renting',
+        'Feasibility studies of site condition according to client’s requirements': 'Feasibility studies of site condition according to client’s requirements',
+        'Design and EM Submission package for Landlord’s approval': 'Design and EM Submission package for Landlord’s approval',
+        'During and Under Renovation': 'During and Under Renovation',
+        'Provide Technical Advice including workmanship': 'Provide Technical Advice including workmanship',
+        'Elaborate EM Design to Landlord & Contractors': 'Elaborate EM Design to Landlord & Contractors',
+        'After shop opening': 'After shop opening',
+        'Provide Technical solutions regarding defects': 'Provide Technical solutions regarding defects',
+        // PROJECT MGMT
+        'project management': 'project management',
+        'Tender Document and / or Comment': 'Tender Document and / or Comment',
+        'Construction Coordination between Management office, Tenant, Designer, EM Consultant, and Workers': 'Construction Coordination between Management office, Tenant, Designer, EM Consultant, and Workers',
+        'Arrangement of Construction and Installation': 'Arrangement of Construction and Installation',
+        'Maintenance': 'Maintenance',
+        'Maintenance of EM system and Kitchen Equipment': 'Maintenance of EM system and Kitchen Equipment',
+        // OTHER
+        'other': 'other',
+        'Building Energy Audit (BEC)': 'Building Energy Audit (BEC)',
+        'Provide Technical Consultancy & Code Compliance Consultancy on EM systems': 'Provide Technical Consultancy & Code Compliance Consultancy on EM systems',
+        'Report of Compliance by Certified REA to EMSD': 'Report of Compliance by Certified REA to EMSD',
+        'Minor Works Submission': 'Minor Works Submission',
+        'Site Inspection': 'Site Inspection',
+        'Advisory on class and technical requirements': 'Advisory on class and technical requirements',
+        'Prepare Documents and Drawings': 'Prepare Documents and Drawings',
+        'Liaison with related government departments': 'Liaison with related government departments',
+        'Liaison with Contractors': 'Liaison with Contractors'
     }
 }
