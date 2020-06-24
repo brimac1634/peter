@@ -29,7 +29,7 @@ const Header = ({ match, history, location }) => {
                     history.push(match.path);
                     setOpen(false);
                 }}  
-                className={`logo z-5 ${(show || !isHome) ? 'show' : null}`}
+                className={`logo z-5 pointer ${(show || !isHome) ? 'show' : null}`}
             >
                 <Logo className='w3 h3' />
             </div>

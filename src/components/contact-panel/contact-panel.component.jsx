@@ -1,15 +1,14 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next'; 
 
-import PageBottom from '../page-bottom/page-bottom.component';
 import IconCircle from '../icon-circle/icon-circle.component';
 import { ReactComponent as PhoneIcon } from '../../assets/phone.svg'
 import { ReactComponent as MailIcon } from '../../assets/mail.svg'
 
-const ContactPanel = () => {
+const ContactPanel = ({ ...otherProps }) => {
     const { t } = useTranslation();
     return (
-        <PageBottom className='bg-moon-gray'>
+        <div {...otherProps}>
             <h1 className='f2 tc lh-copy ttc avenir mt0 mb1 near-black'>{t('HEADER.contact')}</h1>
             <span className='tc f5 center db mb4 near-black'>{t('HOME.For enquiries, please contact us')}:</span>
             <div className='flex justify-center items-center mt2'>
@@ -34,7 +33,7 @@ const ContactPanel = () => {
                     <span className='mt3 fw6 f4 near-black dn db-ns nowrap'>+852-3954-5730</span>
                 </a>
             </div>
-        </PageBottom>
+        </div>
     )
 }
  

@@ -6,6 +6,7 @@ import Header from '../../components/header/header.component';
 import Home from '../home/home.component';
 import About from '../about/about.component';
 import Services from '../services/services.component';
+import Contact from '../contact/contact.component';
 import Loader from '../../components/loader/loader.component';
 import ErrorBoundary from '../../components/error-boundary/error-boundary.component';
 
@@ -17,6 +18,7 @@ const Content = ({ match }) => (
                     <Route exact path={match.path} component={Home} />
                     <Route exact path={`${match.path}/about`} component={About} />
                     <Route path={`${match.path}/services`} component={Services} />
+                    <Route path={`${match.path}/contact`} component={Contact} />
                     <Redirect to={match.path} />
                 </Switch>
             </Suspense>
