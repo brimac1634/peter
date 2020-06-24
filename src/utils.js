@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 export const useScrollY = () => {
     const [scrollY, setScrollY] = useState(0);
@@ -13,4 +13,12 @@ export const useScrollY = () => {
       return () => window.removeEventListener('scroll', handleScroll);
     }, []);
     return scrollY
+}
+
+export const usePrevious = value => {
+  const ref = useRef();
+  useEffect(() => {
+    ref.current = value;
+  });
+  return ref.current;
 }

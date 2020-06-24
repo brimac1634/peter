@@ -13,7 +13,7 @@ const ContactPanel = ({ ...otherProps }) => {
             <span className='tc f5 center db mb4 near-black'>{t('HOME.For enquiries, please contact us')}:</span>
             <div className='flex justify-center items-center mt2'>
                 <a
-                    className='flex flex-column items-center w-50 no-underline link'
+                    className='flex flex-column items-center w-50 no-underline link mh3'
                     href='mailto:peteripadm@gmail.com' 
                     target='_blank' 
                     rel='noopener noreferrer'
@@ -24,7 +24,7 @@ const ContactPanel = ({ ...otherProps }) => {
                     <span className='mt3 fw6 f4 near-black dn db-ns nowrap'>peteripadm@gmail.com</span>
                 </a>
                 <a
-                    className='flex flex-column items-center w-50 no-underline link'
+                    className='flex flex-column items-center w-50 no-underline link mh3'
                     href='tel:+852-3954-5730'
                 >
                     <IconCircle className='w3 h3 w4-ns h4-ns card' black>
