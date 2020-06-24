@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next'; 
 
 import CustomButton from '../../components/custom-button/custom-button.component';
+import ContactPanel from '../../components/contact-panel/contact-panel.component';
 import { ReactComponent as LogoApart } from '../../assets/logo-apart.svg';
 
 import SERVICE_DATA from './service-details.data';
@@ -51,6 +52,7 @@ const ServiceDetails = ({ match, history }) => {
                     <CustomButton type='button' onClick={()=>history.push(`/${i18n.language}/`)}>{t('HEADER.home')}</CustomButton>
                 </div>
             }
+            <ContactPanel/>
         </div>
      );
 }
