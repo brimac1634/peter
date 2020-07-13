@@ -69,7 +69,21 @@ export default {
         'interior design': 'interior design',
         'e&m design': 'e&m design',
         'project management': 'project management',
-        'other': 'other'
+        'other': 'other',
+        'Licence application': 'Licence application', 
+        'Regulation compliance': 'Regulation compliance', 
+        'Feasibility studies': 'Feasibility studies',
+        'Space Usage': 'Space Usage', 
+        'Design packages': 'Design packages', 
+        'Brand image': 'Brand image',
+        'Technical advice': 'Technical advice', 
+        'Design submission package': 'Design submission',
+        'Renovation projects': 'Renovation projects', 
+        'Construction coordination': 'Construction coordination', 
+        'Equipment maintainance': 'Equipment maintainance',
+        'Building energy audit': 'Building energy audit', 
+        'Minor works': 'Minor works',
+        'Leasing': 'Leasing'
     },
     // SERVICE DETAILS
     'SERVICE DETAILS': {

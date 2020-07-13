@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 
 import IconCircle from '../../components/icon-circle/icon-circle.component';
 import PageBottom from '../../components/page-bottom/page-bottom.component';
-import CanvasContainer from '../../components/canvas-container/canvas-container.component';
 import CustomButton from '../../components/custom-button/custom-button.component';
 import { ReactComponent as QualificationIcon } from '../../assets/curriculum.svg'
 import { ReactComponent as StructureIcon } from '../../assets/tie.svg'
@@ -17,8 +16,8 @@ const About = ({ match, history }) => {
     const { t } = useTranslation();
     return ( 
         <div className='vw-100 min-vh-100 overflow-hidden'>
-            <section className='w-100 min-vh-100 flex items-center pa4 pa6-ns bg-near-black'>
-                <CanvasContainer />
+            <section className='w-100 min-vh-100 flex items-center pa4 pa6-ns relative'>
+                <div className='about-hero absolute top-0 left-0 w-100 h-100 z--2'/>
                 <div className='flex flex-column'>
                     <h1 className="f2 f1-l lh-title avenir fw4 white">
                         {t('ABOUT.ABOUT US')}

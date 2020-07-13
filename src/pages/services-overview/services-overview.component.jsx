@@ -30,19 +30,22 @@ const Services = ({ history, match }) => {
                                 title={t(`SERVICES.${title}`)}
                                 onClick={() => history.push(`${match.path}/${url}`)}
                             >
-                                <ul className='list pa0 mv0'>
-                                    {
-                                        detail &&
-                                        detail.map((detail, i) => (
-                                            <li key={i} className="ttc lh-copy w-50 pa2 tc f5">
-                                                {t(`SERVICES.${detail}`)}
-                                            </li>
-                                        ))
-                                    }
-                                </ul>
-                                <CustomButton className='center db mt3' type='button' >
-                                    {t('HOME.SEE MORE')}
-                                </CustomButton>
+                                <div>
+                                    <ul className='list pa0 mv0 flex flex-column items-center relative'>
+                                        {
+                                            detail &&
+                                            detail.map((detail, i) => (
+                                                <li key={i} className="ttc lh-copy mb2 tc f5">
+                                                    {t(`SERVICES.${detail}`)}
+                                                </li>
+                                            ))
+                                        }
+                                        <div className='white-gradient absolute bottom-0 left-0 w-100 h-100'/>
+                                    </ul>
+                                    <CustomButton className='center db mt3' type='button' >
+                                        {t('HOME.SEE MORE')}
+                                    </CustomButton>
+                                </div>
                             </ImageItem>
                         </div>
                     ))

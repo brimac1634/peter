@@ -69,7 +69,22 @@ export default {
         'interior design': '室內設計',
         'e&m design': '機電設計及顧問',
         'project management': '項目管理及施工',
-        'other': '其他'
+        'other': '其他',
+
+        'Licence application': '牌照申請', 
+        'Regulation compliance': '根據條例提供建議', 
+        'Feasibility studies': '提供可行性研究',
+        'Space Usage': '空間佈局', 
+        'Design packages': '提供設計圖則', 
+        'Brand image': '品牌形象提升',
+        'Technical advice': '技術意見', 
+        'Design submission package': '提供業主審批設計及機電圖則',
+        'Renovation projects': '裝修工程項目', 
+        'Construction coordination': '施工協調', 
+        'Equipment maintainance': '維修機電系統及廚房設備',
+        'Building energy audit': '築物能源效益審核評估', 
+        'Minor works': '小型工程',
+        'Leasing': '租賃'
     },
     // SERVICE DETAILS
     'SERVICE DETAILS': {

@@ -75,7 +75,7 @@ export default {
     },
     'e&m-design': {
         title: 'e&m design',
-        detail: ['Feasibility studies', 'Technical advice', 'Design submission'],
+        detail: ['Feasibility studies', 'Technical advice', 'Design submission package'],
         url: 'e&m-design',
         sections: [
             {
@@ -129,7 +129,7 @@ export default {
     },
     'other': {
         title: 'other',
-        detail: ['Building energy audit', 'Compliance reports', 'Minor works'],
+        detail: ['Building energy audit', 'Minor works', 'Leasing'],
         url: 'other',
         sections: [
             {
