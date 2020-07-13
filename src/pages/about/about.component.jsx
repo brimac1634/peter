@@ -55,7 +55,7 @@ const About = ({ match, history }) => {
                     </ul>
                 </div>
             </section>
-            <section className='w-100 mb6-ns mb5 bg-near-black pv4'>
+            <section className='w-100 mb6-ns mb5 pv4 arch-back'>
                 <IconCircle className='w4 h4 b--white'>
                     <StructureIcon fill={'#ffffff'} />
                 </IconCircle>
