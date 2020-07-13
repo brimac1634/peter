@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, useLayoutEffect } from 'react';
+import { useEffect, useState, useLayoutEffect } from 'react';
 
 export const useScrollY = () => {
     const [scrollY, setScrollY] = useState(0);
@@ -26,12 +26,4 @@ export const useWindowSize = () => {
     return () => window.removeEventListener('resize', updateSize);
   }, []);
   return size;
-}
-
-export const usePrevious = value => {
-  const ref = useRef();
-  useEffect(() => {
-    ref.current = value;
-  });
-  return ref.current;
 }

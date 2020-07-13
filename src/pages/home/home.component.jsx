@@ -24,12 +24,6 @@ const Home = ({ match, history }) => {
                         <h1 className="f2 f1-l lh-title avenir fw4 tc near-black">
                             {t('HOME.PETER IP &')}<br/>{t('HOME.ASSOCIATES')}<br/>{t('HOME.LIMITED')}
                         </h1>
-                        {/* <Link 
-                            className="tc ttc mv4 f4 link dim ph3 pv2 dib white bg-near-black pointer"
-                            to={`${match.path}/contact`} 
-                        >
-                            Contact
-                        </Link> */}
                     </div>
                     <div className='absolute bottom-2 left-50 center'>
                         <Arrow />
@@ -61,7 +55,7 @@ const Home = ({ match, history }) => {
                                                 items &&
                                                 items.map((item, i) => (
                                                     <li key={i} className="ttc lh-copy fl w-50 pa2 tc f4">
-                                                        <span className='fw9'>- </span>
+                                                        {/* <span className='fw9'>- </span> */}
                                                         {t(`${title.toUpperCase()}.${item}`)}
                                                     </li>
                                                 ))

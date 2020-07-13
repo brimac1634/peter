@@ -10,7 +10,6 @@ import './services-overview.styles.scss';
 
 const Services = ({ history, match }) => {
     const { t } = useTranslation();
-    console.log(match.path)
     return ( 
         <div className='w-100 min-vh-100'>
             <section className='w-100 min-vh-100 flex items-center pa4 pa6-ns'>
@@ -18,7 +17,6 @@ const Services = ({ history, match }) => {
                     <h1 className='f2 f1-l lh-title avenir fw4'>
                         {t('SERVICES.OUR SERVICES')}
                     </h1>
-                    <span className='f4'>{t('ABOUT.diverse range of expertise')}</span>
                 </div>
             </section>
             <section className='w-100 mb6 flex-ns flex-wrap-ns justify-center-ns'>
@@ -31,13 +29,11 @@ const Services = ({ history, match }) => {
                             onClick={() => history.push(`${match.path}/${url}`)}
                         >
                             <div className='flex flex-column justify-between h-100'>
-                                <div>
-                                    <IconCircle className='w3 h3'>
-                                        <img src={require(`../../assets/${icon}`)} alt={title} />
-                                    </IconCircle>
-                                    <h1 className='f2 f3-ns mb2 ttc tc'>{t(`SERVICES.${title}`)}</h1>
-                                </div>
-                                <CustomButton className='center db mt4 bg-custom-yellow' type='button' >
+                                <IconCircle className='w3 h3'>
+                                    <img src={require(`../../assets/${icon}`)} alt={title} />
+                                </IconCircle>
+                                <h1 className='f2 f3-ns mb2 ttc tc'>{t(`SERVICES.${title}`)}</h1>
+                                <CustomButton className='center db mt4 bg-moon-gray' type='button' >
                                     {t('HOME.SEE MORE')}
                                 </CustomButton>
                             </div>

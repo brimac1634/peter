@@ -23,7 +23,6 @@ const About = ({ match, history }) => {
                     <h1 className="f2 f1-l lh-title avenir fw4 white">
                         {t('ABOUT.ABOUT US')}
                     </h1>
-                    <span className='f4 white'>{t('ABOUT.since 2011')}</span>
                 </div>
             </section>
             <section className='slanted w-100 mb6 bg-moon-gray'>
