@@ -12,8 +12,10 @@ const Services = ({ history, match }) => {
     const { t } = useTranslation();
     return ( 
         <div className='w-100 min-vh-100'>
-            <section className='service-hero db w-100 min-vh-100 flex items-center pa4 pa6-ns'>
-                <div className='flex flex-column'>
+            <section className='db w-100 min-vh-100 flex items-center pa4 pa6-ns relative'>
+                <div className='service-hero absolute top-0 left-0 w-100 h-100 z--1'/>
+                <div className='absolute top-0 left-0 w-100 h-100 bg-custom-yellow o-40'/>
+                <div className='flex flex-column z-1'>
                     <h1 className='f2 f1-l lh-title avenir near-black fw4'>
                         {t('SERVICES.OUR SERVICES')}
                     </h1>
