@@ -5,7 +5,7 @@ export default {
         'about': '關於我們',
         'services': '我們的服務',
         'contact': '聯絡我們',
-        'MENU': 'MENU'
+        'MENU': '選單'
     },
     // FOOTER
     'FOOTER': {

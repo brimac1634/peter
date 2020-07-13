@@ -1,7 +1,7 @@
 export default {
     licensing: {
         title: 'licensing consultant',
-        icon: 'license.svg',
+        detail: ['Licence application', 'Regulation compliance', 'Feasibility studies'],
         url: 'licensing',
         sections: [
             {
@@ -58,7 +58,7 @@ export default {
     },
     'interior-design': {
         title: 'interior design',
-        icon: 'bar.svg',
+        detail: ['Space Usage', 'Design packages', 'Brand image'],
         url: 'interior-design',
         sections: [
             {
@@ -75,7 +75,7 @@ export default {
     },
     'e&m-design': {
         title: 'e&m design',
-        icon: 'ventilation.svg',
+        detail: ['Feasibility studies', 'Technical advice', 'Design submission'],
         url: 'e&m-design',
         sections: [
             {
@@ -102,7 +102,7 @@ export default {
     },
     'project-management': {
         title: 'project management',
-        icon: 'project.svg',
+        detail: ['Renovation projects', 'Construction coordination', 'Equipment maintainance'],
         url: 'project-management',
         sections: [
             {
@@ -129,7 +129,7 @@ export default {
     },
     'other': {
         title: 'other',
-        icon: 'other.svg',
+        detail: ['Building energy audit', 'Compliance reports', 'Minor works'],
         url: 'other',
         sections: [
             {

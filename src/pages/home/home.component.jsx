@@ -17,7 +17,9 @@ const Home = ({ match, history }) => {
     return ( 
         <div className='vw-100 min-vh-100 overflow-hidden '>
             <section className='w-100 min-vh-100 relative'>
-                <CanvasContainer />
+                <div className='absolute top-0 left-0 w-100 vh-100'>
+                    <CanvasContainer />
+                </div>
                 <div className='w-100 min-vh-100 flex flex-column justify-center items-center pa4 pa6-ns relative'>
                     <Logo className='w4 h4' />
                     <div className='flex flex-column'>
@@ -47,19 +49,17 @@ const Home = ({ match, history }) => {
                                         title={t(`HEADER.${title}`)}
                                         onClick={() => history.push(`${match.path}/${title}`)}
                                     >
-                                        <div>
-                                            <ul className='list flex flex-wrap items-center pa0'>
-                                                {
-                                                    items &&
-                                                    items.map((item, i) => (
-                                                        <li key={i} className="ttc lh-copy w-50 pa2 tc f5">
-                                                            {t(`${title.toUpperCase()}.${item}`)}
-                                                        </li>
-                                                    ))
-                                                }
-                                            </ul>
-                                        </div>
-                                        <CustomButton className='center db mt4' type='button' >
+                                        <ul className='list flex flex-wrap items-center pa0 mv0'>
+                                            {
+                                                items &&
+                                                items.map((item, i) => (
+                                                    <li key={i} className="ttc lh-copy w-50 pa2 tc f5">
+                                                        {t(`${title.toUpperCase()}.${item}`)}
+                                                    </li>
+                                                ))
+                                            }
+                                        </ul>
+                                        <CustomButton className='center db mt3' type='button' >
                                             {t('HOME.SEE MORE')}
                                         </CustomButton>
                                     </ImageItem>

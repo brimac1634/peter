@@ -11,14 +11,13 @@ import SERVICE_DATA from './service-details.data';
 const ServiceDetails = ({ match, history }) => {
     const { t, i18n } = useTranslation();
     const service = useMemo(() => SERVICE_DATA[match.params.service], [match.params]);
-    console.log(service);
     return ( 
         <div className='vw-100 min-vh-100 overflow-hidden'>
             {
                 service &&
                 <section className='w-100 min-vh-100 flex items-center pa4 pa6-ns'>
                     <div className='flex flex-column'>
-                        <h1 className="f2 f1-l lh-title avenir fw4">
+                        <h1 className="f2 f1-l lh-title avenir fw4 ttc">
                             {t(`SERVICES.${service.title}`)}
                         </h1>
                     </div>
