@@ -18,7 +18,7 @@ const ContactPanel = ({ ...otherProps }) => {
                     target='_blank' 
                     rel='noopener noreferrer'
                 >
-                    <IconCircle className='w3 h3 w4-ns h4-ns card' black>
+                    <IconCircle className='w3 h3 w4-ns h4-ns card shadow-4' black>
                         <MailIcon />
                     </IconCircle>
                     <span className='mt3 fw6 f4 near-black dn db-ns nowrap'>peteripadm@gmail.com</span>
@@ -27,7 +27,7 @@ const ContactPanel = ({ ...otherProps }) => {
                     className='flex flex-column items-center w-50 no-underline link mh3'
                     href='tel:+852-3954-5730'
                 >
-                    <IconCircle className='w3 h3 w4-ns h4-ns card' black>
+                    <IconCircle className='w3 h3 w4-ns h4-ns card shadow-4' black>
                         <PhoneIcon />
                     </IconCircle>
                     <span className='mt3 fw6 f4 near-black dn db-ns nowrap'>+852-3954-5730</span>

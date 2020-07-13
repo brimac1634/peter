@@ -12,7 +12,7 @@ const Services = ({ history, match }) => {
     const { t } = useTranslation();
     return ( 
         <div className='w-100 min-vh-100'>
-            <section className='w-100 min-vh-100 flex items-center pa4 pa6-ns'>
+            <section className='service-hero w-100 min-vh-100 flex items-center pa4 pa6-ns'>
                 <div className='flex flex-column'>
                     <h1 className='f2 f1-l lh-title avenir fw4'>
                         {t('SERVICES.OUR SERVICES')}

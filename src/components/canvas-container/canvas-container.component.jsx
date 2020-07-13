@@ -25,6 +25,7 @@ const CanvasContainer = ({ className, ...otherProps }) => {
 			{ rect &&
 				<Canvas rect={rect} />
 			}
+			<div className='w-100 vh-100 absolute top-0 left-0' style={{backdropFilter: 'blur(1px)'}}/>
 		</div>
 	)
 }
