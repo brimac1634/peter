@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import Arrow from '../../components/arrow/arrow.component';
 import Enter from '../../components/enter/enter.component';
-import IconCircle from '../../components/icon-circle/icon-circle.component';
+import ImageItem from '../../components/image-item/image-item.component';
 import ContactPanel from '../../components/contact-panel/contact-panel.component';
 import CustomButton from '../../components/custom-button/custom-button.component';
 import PageBottom from '../../components/page-bottom/page-bottom.component';
@@ -42,21 +42,17 @@ const Home = ({ match, history }) => {
                         HOME_LIST.map(({ title, items, icon }, i) => (
                             <Enter enterStyle={i % 2 ? 'fade-left' : 'fade-right'} key={title} className='w-50-ns ma0'>
                                 <div className='h-100 w-100 pa4'>
-                                    <article  
-                                        className='h-100 card w6-ns ma4s bg-white br3 pa3 pa4-ns ba b--black-10 pointer flex flex-column justify-between'
+                                    <ImageItem 
+                                        index={i} 
+                                        title={t(`HEADER.${title}`)}
                                         onClick={() => history.push(`${match.path}/${title}`)}
                                     >
                                         <div>
-                                            <IconCircle className='w3 h3 w4-ns h4-ns'>
-                                                <img src={require(`../../assets/${icon}`)} alt={title} />
-                                            </IconCircle>
-                                            <h1 className='f3 mb2 ttc bb b--custom-yellow avenir pv1 bw1 near-black'>{t(`HEADER.${title}`)}</h1>
                                             <ul className='list flex flex-wrap items-center pa0'>
                                                 {
                                                     items &&
                                                     items.map((item, i) => (
-                                                        <li key={i} className="ttc lh-copy w-50 pa2 tc f4">
-                                                            {/* <span className='fw9'>- </span> */}
+                                                        <li key={i} className="ttc lh-copy w-50 pa2 tc f5">
                                                             {t(`${title.toUpperCase()}.${item}`)}
                                                         </li>
                                                     ))
@@ -66,7 +62,7 @@ const Home = ({ match, history }) => {
                                         <CustomButton className='center db mt4' type='button' >
                                             {t('HOME.SEE MORE')}
                                         </CustomButton>
-                                    </article>
+                                    </ImageItem>
                                 </div>
                             </Enter>
                         ))

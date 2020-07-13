@@ -24,6 +24,10 @@ const Header = ({ match, history, location }) => {
 
     return ( 
         <header className={`header fixed z-2 top-0 left-0 w-100 ph3 pv2 pv2-ns ph4-m ph5-l flex items-center justify-between ${(show || !isHome) ? 'opaque' : null}`}>
+            {
+                (show || !isHome) &&
+                <div className='absolute top-0 left-0 w-100 h-100' style={{backdropFilter: 'blur(2px)'}} />
+            }
             <div 
                 onClick={() => {
                     history.push(match.path);

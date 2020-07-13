@@ -14,7 +14,7 @@ const Services = ({ history, match }) => {
         <div className='w-100 min-vh-100'>
             <section className='db w-100 min-vh-100 flex items-center pa4 pa6-ns relative'>
                 <div className='service-hero absolute top-0 left-0 w-100 h-100 z--1'/>
-                <div className='absolute top-0 left-0 w-100 h-100 bg-custom-yellow o-40'/>
+                <div className='absolute top-0 left-0 w-100 h-100 bg-custom-yellow o-50'/>
                 <div className='flex flex-column z-1'>
                     <h1 className='f2 f1-l lh-title avenir near-black fw4'>
                         {t('SERVICES.OUR SERVICES')}
@@ -31,9 +31,7 @@ const Services = ({ history, match }) => {
                             onClick={() => history.push(`${match.path}/${url}`)}
                         >
                             <div className='flex flex-column justify-between h-100'>
-                                <IconCircle className='w3 h3'>
-                                    <img src={require(`../../assets/${icon}`)} alt={title} />
-                                </IconCircle>
+                                {/* <div className='w-100 h3' style={{backgroundImage: url(`../../assets/floor-${i}.jpg`)}}/> */}
                                 <h1 className='f2 f3-ns mb2 ttc tc'>{t(`SERVICES.${title}`)}</h1>
                                 <CustomButton className='center db mt4 bg-moon-gray' type='button' >
                                     {t('HOME.SEE MORE')}
