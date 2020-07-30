@@ -21,7 +21,7 @@ const ContactPanel = ({ ...otherProps }) => {
                     <IconCircle className='w3 h3 w4-ns h4-ns card shadow-4' black>
                         <MailIcon />
                     </IconCircle>
-                    <span className='mt3 fw6 f5 near-black db-ns nowrap'>peteripadm@gmail.com</span>
+                    <span className='mt3 fw6 f5 near-black db-ns nowrap'>admin@peterip.associates</span>
                 </a>
                 <a
                     className='flex flex-column items-center w-50 no-underline link mh3 mt3'
@@ -30,7 +30,7 @@ const ContactPanel = ({ ...otherProps }) => {
                     <IconCircle className='w3 h3 w4-ns h4-ns card shadow-4' black>
                         <PhoneIcon />
                     </IconCircle>
-                    <span className='mt3 fw6 f5 near-black db-ns nowrap'>+852-3954-5730</span>
+                    <span className='mt3 fw6 f5 near-black db-ns nowrap'>+852-5173-7769</span>
                 </a>
             </div>
         </div>
