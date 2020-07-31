@@ -21,7 +21,7 @@ const ContactPanel = ({ ...otherProps }) => {
                     <IconCircle className='w3 h3 w4-ns h4-ns card shadow-4' black>
                         <MailIcon />
                     </IconCircle>
-                    <span className='mt3 fw6 f5 near-black db-ns nowrap'>admin@peterip.associates</span>
+                    <span className='mt3 fw6 f5 near-black db-ns nowrap'>admin@peterip-associates.com</span>
                 </a>
                 <a
                     className='flex flex-column items-center w-50 no-underline link mh3 mt3'

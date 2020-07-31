@@ -24,7 +24,7 @@ const Footer = ({ history, location }) => {
                     target='_blank' 
                     rel='noopener noreferrer'
                 >
-                    admin@peterip.associates
+                    admin@peterip-associates.com
                 </a>
                 <a className='f6 dib ph2 link black dim' href='tel:+852-3954-5730'>+852-5173-7769</a>
             </div>
