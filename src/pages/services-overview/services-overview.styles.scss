@@ -1,6 +1,6 @@
 .service-hero {
     background-attachment: fixed;
-    filter: saturate(0);
+    // filter: saturate(0);
     background: url('../../assets/rendering-mobile.jpg') no-repeat center center;
     
     @media (min-width: 768px) {
@@ -9,7 +9,7 @@
 }
 
 .service-gradient {
-    background: linear-gradient(rgba(17,17,17,0.3), #111111);
+    background: linear-gradient(rgba(17,17,17,0.1), #111111);
 }
 
 .white-gradient { 

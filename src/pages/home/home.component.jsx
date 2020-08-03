@@ -8,6 +8,7 @@ import ContactPanel from '../../components/contact-panel/contact-panel.component
 import CustomButton from '../../components/custom-button/custom-button.component';
 import PageBottom from '../../components/page-bottom/page-bottom.component';
 import CanvasContainer from '../../components/canvas-container/canvas-container.component';
+import Gallery from '../../components/gallery/gallery.component';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 
 import HOME_LIST from './home.data';
@@ -37,6 +38,11 @@ const Home = ({ match, history }) => {
                     <h1 className='f2 f1-ns tc lh-copy white avenir'>{t('HOME.Hong Kongs F&B')}<br/>{t('HOME.consultancy group')}</h1>
                 </div>
             </section>
+            <section className='mt6 mb3 w-100'>
+                <Gallery 
+                    images={[...Array(6)].map(i => 'https://picsum.photos/200/300')}
+                />
+            </section>
             <section className='w-100 min-vh-100 vh-75-ns cf ph2-ns flex justify-center items-center'>
                 <div className='center flex-ns'>
                     {
@@ -53,7 +59,7 @@ const Home = ({ match, history }) => {
                                             {
                                                 items &&
                                                 items.map((item, i) => (
-                                                    <li key={i} className="ttc lh-copy w-50 pa2 tc f5">
+                                                    <li key={i} className='ttc lh-copy w-50 pa2 tc f5'>
                                                         {t(`${title.toUpperCase()}.${item}`)}
                                                     </li>
                                                 ))
