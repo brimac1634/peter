@@ -9,8 +9,8 @@ import translationZh from "./zh/translation.js";
 
 i18n.use(XHR).use(initReactI18next).init({
     debug: true,
-    lng: 'en',
-    fallbackLng: 'en',
+    lng: 'zh',
+    fallbackLng: 'zh',
     keySeparator: ".",
     interpolation: {
       escapeValue: false

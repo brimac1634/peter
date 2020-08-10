@@ -28,10 +28,7 @@ const About = ({ match, history }) => {
                 <div className="pa3 pa4-ns">
                     <h1 className='f2 tc lh-copy avenir ttu'>{t('ABOUT.who are we')}</h1>
                     <p className="tc f4 lh-copy measure center avenir">
-                        Peter Ip & Associates Limited is a multi-discipline consultancy company providing full professional services for
-                        the F&B industry. Established by Mr. Peter Ip, the ex-senior catering expert from Café de Coral Holdings
-                        Limited, we serve our clients who would like to setup and operate their F&B shops including restaurants,
-                        fast-food shops, factories, hotels, etc.
+                        {t('ABOUT.description')}
                     </p>
                 </div>
             </section>
@@ -41,7 +38,7 @@ const About = ({ match, history }) => {
                 </IconCircle>
                 <div className="ph2 pv1 ph3-ns">
                     <h1 className='f2 tc lh-copy ttc avenir'>{t('ABOUT.experience')}</h1>
-                    <p className='tc f4'>Our team is well-experienced in dealing<br/> with various types of F&B shops...</p>
+                    <p className='tc f4'>{t('ABOUT.our team 1')}<br/> {t('ABOUT.our team 2')}</p>
                 </div>
                 <div className="ph3 ph4-ns">
                     <ul className="list pl0 measure center">

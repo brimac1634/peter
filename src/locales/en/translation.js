@@ -28,6 +28,9 @@ export default {
     'ABOUT': {
         'ABOUT US': 'ABOUT US',
         'since 2011': 'Since 2011',
+        'description': 'Peter Ip & Associates Limited is a multi-discipline consultancy company providing full professional services for the F&B industry. Established by Mr. Peter Ip, an ex-senior catering expert from a publicly listed F&B restaurant group, we serve our clients who would like to setup and operate their F&B shops including restaurants, fast-food shops, factories, hotels, etc.',
+        'our team 1': 'Our team is well-experienced in dealing',
+        'our team 2': 'with various types of F&B shops...', 
         'who are we': 'who are we', 
         'experience': 'experience',
         'SHOP_TYPES': {

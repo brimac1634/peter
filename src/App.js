@@ -14,7 +14,7 @@ const App = () => (
         <Switch>
           <Route path='/en' component={Language} />
           <Route path='/zh' component={Language} />
-          <Redirect to='/en' />
+          <Redirect to='/zh' />
         </Switch>
       </Suspense>
     </ErrorBoundary>
