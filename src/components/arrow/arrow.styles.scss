@@ -6,8 +6,8 @@
     .arrow {
         animation-delay: 2000ms;
         animation: bob 5s ease-in-out infinite;
-        border-right: solid 2px black;
-        border-bottom: solid 2px black;
+        border-right: solid 2px white;
+        border-bottom: solid 2px white;
 
         @keyframes bob {
             0%, 20%, 100% {
