@@ -2,10 +2,8 @@ import React from 'react';
 import { useTranslation } from 'react-i18next'; 
 
 import Arrow from '../../components/arrow/arrow.component';
-import Enter from '../../components/enter/enter.component';
-import ImageItem from '../../components/image-item/image-item.component';
 import ContactPanel from '../../components/contact-panel/contact-panel.component';
-import CustomButton from '../../components/custom-button/custom-button.component';
+import FlatButton from '../../components/flat-button/flat-button.component';
 import PageBottom from '../../components/page-bottom/page-bottom.component';
 import CanvasContainer from '../../components/canvas-container/canvas-container.component';
 import Carousel from '../../components/carousel/carousel.component';
@@ -31,7 +29,7 @@ const Home = ({ match, history }) => {
                 <div className='w-100 min-vh-100 flex flex-column justify-center items-center pa4 pa6-ns relative'>
                     <Logo className='w4 h4' />
                     <div className='flex flex-column'>
-                        <h1 className="f2 f1-l lh-title avenir fw4 tc white">
+                        <h1 className="f2 f1-l lh-title jura fw4 tc white">
                             {t('HOME.PETER IP &')}<br/>{t('HOME.ASSOCIATES')}<br/>{t('HOME.LIMITED')}
                         </h1>
                     </div>
@@ -40,67 +38,73 @@ const Home = ({ match, history }) => {
                     </div>
                 </div>
             </section>
-            <section className='w-100 mt5 mb5 bg-near-black pb4'>
-                <div className="w-80 w-40-ns pa3 bg-dark-gray">
-                    <h1 className='f3 tc ttc lh-copy white avenir fw4'>{t('HOME.Hong Kongs F&B')}<br/>{t('HOME.consultancy group')}</h1>
+            <section className='w-100 mt5 mb5 bg-near-black'>
+                <div className="w-100 w-30-ns pv3 ph4 bg-dark-gray">
+                    <h1 className='f3 f2-ns ttc lh-copy white jura fw7'>{t('HOME.Hong Kongs F&B')}<br/>{t('HOME.consultancy group')}</h1>
                 </div>
-                <Carousel showIndicator>
-                    <ProgressivePhoto 
-                        className='carousel-photo' 
-                        src={picture1} 
-                        // overlay={banner1Overlay} 
-                        alt='banner' 
-                    />
-                    <ProgressivePhoto 
-                        className='carousel-photo' 
-                        src={picture2} 
-                        // overlay={banner1Overlay} 
-                        alt='banner' 
-                    />
-                    <ProgressivePhoto 
-                        className='carousel-photo' 
-                        src={picture3} 
-                        // overlay={banner1Overlay} 
-                        alt='banner' 
-                    />
-                    <ProgressivePhoto 
-                        className='carousel-photo' 
-                        src={picture4} 
-                        // overlay={banner1Overlay} 
-                        alt='banner' 
-                    />
-                </Carousel>
+                <div className='w-100 pb4'>
+                    <Carousel showIndicator>
+                        <ProgressivePhoto 
+                            className='carousel-photo' 
+                            src={picture1} 
+                            // overlay={banner1Overlay} 
+                            alt='banner' 
+                        />
+                        <ProgressivePhoto 
+                            className='carousel-photo' 
+                            src={picture2} 
+                            // overlay={banner1Overlay} 
+                            alt='banner' 
+                        />
+                        <ProgressivePhoto 
+                            className='carousel-photo' 
+                            src={picture3} 
+                            // overlay={banner1Overlay} 
+                            alt='banner' 
+                        />
+                        <ProgressivePhoto 
+                            className='carousel-photo' 
+                            src={picture4} 
+                            // overlay={banner1Overlay} 
+                            alt='banner' 
+                        />
+                    </Carousel>
+                </div>
             </section>
-            <section className='w-100 min-vh-100 vh-75-ns cf ph2-ns flex justify-center items-center'>
-                <div className='center flex-ns'>
-                    {
-                        HOME_LIST &&
-                        HOME_LIST.map(({ title, items, icon }, i) => (
-                            <Enter enterStyle={i % 2 ? 'fade-left' : 'fade-right'} key={title} className='w-50-ns ma0'>
-                                <section className='w-100 mt5 mb5 bg-near-black'>
-                                    <div className="w-80 w-40-ns pa3 bg-dark-gray">
-                                        <h1 className='f3 tc ttc lh-copy white avenir fw3'>{t(`HEADER.${title}`)}</h1>
-                                    </div>
-                                    <ul className='list flex flex-wrap items-center pa0 mv0'>
+            <section className='w-100'>
+                {
+                    HOME_LIST &&
+                    HOME_LIST.map(({ title, items }, i) => (
+                        <section className='w-100 mt5 mb5 bg-near-white' key={i}>
+                            <div className="w-100 w-30-ns pv3 ph4 bg-dark-gray">
+                                <h1 className='f3 f2-ns ttc lh-copy white jura fw7'>{t(`HEADER.${title}`)}</h1>
+                            </div>
+                            <div className='db flex-ns'>
+                                <div className='dn db-ns w-30 bg-custom-green'/>
+                                <div className='w-70-ns'>
+                                    <ul className='list pa0 mb0 mt4'>
                                         {
                                             items &&
                                             items.map((item, i) => (
-                                                <li key={i} className="ttc lh-copy w-50 pa2 tc f5">
-                                                    {t(`${title.toUpperCase()}.${item}`)}
+                                                <li key={i} className="ttc lh-copy pv3 tc f4 f3-ns relative mv2">
+                                                    <div className='cross-line bg-custom-green'/>
+                                                    <span className='absolute-item nowrap bg-near-white ph2'>{t(`${title.toUpperCase()}.${item}`)}</span>
                                                 </li>
                                             ))
                                         }
                                     </ul>
-                                    <CustomButton className='center db mt3' type='button' onClick={() => history.push(`${match.path}/${title}`)} >
-                                        {t('HOME.SEE MORE')}
-                                    </CustomButton>
-                                </section>
-                            </Enter>
-                        ))
-                    }
-                </div>
+                                    <div className='mb3 mt4 flex justify-center pb4'>
+                                        <FlatButton type='button' onClick={() => history.push(`${match.path}/${title}`)} >
+                                            {t('HOME.SEE MORE')}
+                                        </FlatButton>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    ))
+                }
             </section>
-            <PageBottom className='bg-moon-gray'>
+            <PageBottom className='bg-dark-gray'>
                 <ContactPanel />
             </PageBottom>
         </div>

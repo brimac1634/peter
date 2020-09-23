@@ -16,7 +16,7 @@ const Services = ({ history, match }) => {
                 <div className='service-hero absolute top-0 left-0 w-100 h-100 z--1'/>
                 <div className='service-gradient absolute top-0 left-0 w-100 h-100' />
                 <div className='flex flex-column z-1'>
-                    <h1 className='f2 f1-l lh-title avenir near-white fw4'>
+                    <h1 className='f2 f1-l lh-title jura near-white fw4'>
                         {t('SERVICES.OUR SERVICES')}
                     </h1>
                 </div>

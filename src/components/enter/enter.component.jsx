@@ -11,21 +11,18 @@ const Enter = ({ children, enterStyle, className, ...otherProps }) => {
 
 	useEffect(()=>{
 		if (!enter) return;
-		const { top, height } = enter.current.getBoundingClientRect();
-		if (show) {
-			if (window.innerHeight < top) {
-				setShow(false);
-			}
-		} else {
-			if (top + height * 0.6 < window.innerHeight) {
-				setShow(true);
-			}
+		const { top } = enter.current.getBoundingClientRect(); 
+		const inView = (enterStyle && !show) ? top < window.innerHeight - 50 : top < window.innerHeight;
+		if (inView && !show) {
+			setShow(true);
+		} else if (!inView && show) {
+			setShow(false);
 		}
-	}, [scrollY,show])
+	}, [scrollY])
 	
 	return (
 		<div 
-			className={`enter ${show ? enterStyle : null} ${className}`} 
+			className={`${enterStyle && 'enter'} ${show && enterStyle}`} 
 			ref={enter}
 			{ ...otherProps }
 		>

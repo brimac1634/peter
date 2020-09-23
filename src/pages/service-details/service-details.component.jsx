@@ -17,7 +17,7 @@ const ServiceDetails = ({ match, history }) => {
                 service &&
                 <section className='w-100 min-vh-100 flex items-center pa4 pa6-ns'>
                     <div className='flex flex-column'>
-                        <h1 className="f2 f1-l lh-title avenir fw4 ttc">
+                        <h1 className="f2 f1-l lh-title jura fw4 ttc">
                             {t(`SERVICES.${service.title}`)}
                         </h1>
                     </div>
@@ -28,7 +28,7 @@ const ServiceDetails = ({ match, history }) => {
                 service.sections.map(({ title, items }) => (
                     <section className='w-100 mb6-ns mb5' key={title}>
                         <div className="ph2 pv1 ph3-ns">
-                            <h1 className='f4 tc lh-copy ttc avenir'>{t(`SERVICE DETAILS.${title}`)}</h1>
+                            <h1 className='f4 tc lh-copy ttc jura'>{t(`SERVICE DETAILS.${title}`)}</h1>
                         </div>
                         <div className="ph3 ph4-ns">
                             <ul className="list pl0 measure center">
@@ -47,7 +47,7 @@ const ServiceDetails = ({ match, history }) => {
                 !service &&
                 <div className='center flex flex-column items-center vh-100'>
                     <LogoApart className='w4 h4 mt6' />
-                    <h1 className='f2 f1-l lh-title avenir fw4 mb1'>404</h1>
+                    <h1 className='f2 f1-l lh-title jura fw4 mb1'>404</h1>
                     <span className='f5 mb4 fw5'>Page not found</span>
                     <CustomButton type='button' onClick={()=>history.push(`/${i18n.language}/`)}>{t('HEADER.home')}</CustomButton>
                 </div>

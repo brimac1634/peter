@@ -2,6 +2,8 @@ import React, { useMemo } from 'react';
 import { withRouter } from 'react-router-dom';
 import { useTranslation } from 'react-i18next'; 
 
+import FlatButton from '../flat-button/flat-button.component';
+
 import './menu-button.styles.scss'
 
 const NAV = ['home', 'about', 'services', 'contact'];
@@ -23,7 +25,7 @@ const MenuButton = ({ location, history, match, open, setOpen }) => {
 					{
 						NAV &&
 						NAV.map((nav, i) => (
-							<span 
+							<FlatButton 
 								key={nav}
 								className={`
 									ttc no-underline black dib nav-item mb3 pointer f3 f1-ns
@@ -33,7 +35,7 @@ const MenuButton = ({ location, history, match, open, setOpen }) => {
 								title={nav}
 							>
 								{t(`HEADER.${nav}`)}
-							</span>
+							</FlatButton>
 						))
 					}
 					<span 

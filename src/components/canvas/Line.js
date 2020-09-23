@@ -10,8 +10,9 @@ function Floater(x,y,xEnd,yEnd,c) {
   this.draw = function() {
     this.c.globalAlpha = this.alpha;
     this.c.beginPath();
+    this.c.lineCap = "round";
     this.c.moveTo(this.x, this.y);
-    this.c.strokeStyle = 'rgb(253,171,5)';
+    this.c.strokeStyle = 'rgb(253,171,5, 0.4)';
     this.c.lineTo(this.xEnd, this.yEnd);
     this.c.stroke();
   }
