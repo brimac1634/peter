@@ -143,6 +143,8 @@ export default {
         'Advisory on class and technical requirements': 'Advisory on class and technical requirements',
         'Prepare Documents and Drawings': 'Prepare Documents and Drawings',
         'Liaison with related government departments': 'Liaison with related government departments',
-        'Liaison with Contractors': 'Liaison with Contractors'
+        'Liaison with Contractors': 'Liaison with Contractors',
+        // PAGE NOT FOUND
+        'page not found': 'page not found'
     }
 }

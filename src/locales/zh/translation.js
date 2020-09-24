@@ -144,6 +144,8 @@ export default {
         'Advisory on class and technical requirements': '就現場環境提供技術意見',
         'Prepare Documents and Drawings': '準備文件及圖則',
         'Liaison with related government departments': '向政府部門交涉跟進',
-        'Liaison with Contractors': '向承辦商交涉跟進'
+        'Liaison with Contractors': '向承辦商交涉跟進',
+        // PAGE NOT FOUND
+        'page not found': '网页未找到'
     }
 };

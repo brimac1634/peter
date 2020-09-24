@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next'; 
 
-import CustomButton from '../../components/custom-button/custom-button.component';
+import FlatButton from '../../components/flat-button/flat-button.component';
 import ContactPanel from '../../components/contact-panel/contact-panel.component';
 import PageBottom from '../../components/page-bottom/page-bottom.component';
 import IconCircle from '../../components/icon-circle/icon-circle.component';
@@ -120,8 +120,8 @@ const ServiceDetails = ({ match, history }) => {
                 <div className='center flex flex-column items-center vh-100'>
                     <LogoApart className='w4 h4 mt6' />
                     <h1 className='f2 f1-l lh-title jura fw4 mb1'>404</h1>
-                    <span className='f5 mb4 fw5'>Page not found</span>
-                    <CustomButton type='button' onClick={()=>history.push(`/${i18n.language}/`)}>{t('HEADER.home')}</CustomButton>
+                    <span className='f5 mb4 fw5'>{t('SERVICE DETAILS.page not found')}</span>
+                    <FlatButton type='button' onClick={()=>history.push(`/${i18n.language}/`)}>{t('HEADER.home')}</FlatButton>
                 </div>
             }
             <PageBottom className='bg-dark-gray'>
