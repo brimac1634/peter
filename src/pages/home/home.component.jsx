@@ -6,6 +6,7 @@ import ContactPanel from '../../components/contact-panel/contact-panel.component
 import FlatButton from '../../components/flat-button/flat-button.component';
 import PageBottom from '../../components/page-bottom/page-bottom.component';
 import CanvasContainer from '../../components/canvas-container/canvas-container.component';
+import FloorImage from '../../components/floor-image/floor-image.component';
 import Carousel from '../../components/carousel/carousel.component';
 import ProgressivePhoto from '../../components/progressive-photo/progressive-photo.component';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
@@ -29,7 +30,7 @@ const Home = ({ match, history }) => {
                 <div className='w-100 min-vh-100 flex flex-column justify-center items-center pa4 pa6-ns relative'>
                     <Logo className='w4 h4' />
                     <div className='flex flex-column'>
-                        <h1 className="f2 f1-l lh-title jura fw4 tc white">
+                        <h1 className="f2 f1-l lh-title jura fw4 tc near-white">
                             {t('HOME.PETER IP &')}<br/>{t('HOME.ASSOCIATES')}<br/>{t('HOME.LIMITED')}
                         </h1>
                     </div>
@@ -38,11 +39,11 @@ const Home = ({ match, history }) => {
                     </div>
                 </div>
             </section>
-            <section className='w-100 mt5 mb5 bg-near-black'>
-                <div className="w-100 w-30-ns pv3 ph4 bg-dark-gray">
-                    <h1 className='f3 f2-ns ttc lh-copy white jura fw7'>{t('HOME.Hong Kongs F&B')}<br/>{t('HOME.consultancy group')}</h1>
+            <section className='w-100 mt5 mb5 bg-near-white flex-ns'>
+                <div className="w-100 w-30-ns pv3 ph4 bg-near-black">
+                    <h1 className='f3 f2-ns ttc lh-copy near-white jura fw7'>{t('HOME.Hong Kongs F&B')}<br/>{t('HOME.consultancy group')}</h1>
                 </div>
-                <div className='w-100 pb4'>
+                <div className='w-100 w-70-ns pb3 pv4-ns bg-near-black'>
                     <Carousel showIndicator>
                         <ProgressivePhoto 
                             className='carousel-photo' 
@@ -76,11 +77,11 @@ const Home = ({ match, history }) => {
                     HOME_LIST &&
                     HOME_LIST.map(({ title, items }, i) => (
                         <section className='w-100 mt5 mb5 bg-near-white' key={i}>
-                            <div className="w-100 w-30-ns pv3 ph4 bg-dark-gray">
-                                <h1 className='f3 f2-ns ttc lh-copy white jura fw7'>{t(`HEADER.${title}`)}</h1>
+                            <div className="w-100 w-30-ns pv3 ph4 bg-near-black">
+                                <h1 className='f3 f2-ns ttc lh-copy near-white jura fw7'>{t(`HEADER.${title}`)}</h1>
                             </div>
                             <div className='db flex-ns'>
-                                <div className='dn db-ns w-30 bg-custom-green'/>
+                                <FloorImage className='dn db-ns w-30 bg-custom-green' />
                                 <div className='w-70-ns'>
                                     <ul className='list pa0 mb0 mt4'>
                                         {

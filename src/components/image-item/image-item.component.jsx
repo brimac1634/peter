@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './image-item.styles.scss';
-
 const ImageItem = ({ title, children, ...otherProps }) => (
     <article  
         className='h-100 card w6-ns ma4s bg-white shadow-4 pointer flex flex-column justify-between overflow-hidden'
