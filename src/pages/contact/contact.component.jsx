@@ -7,7 +7,7 @@ const Contact = () => {
     return ( 
         <div className='vw-100 min-vh-100 overflow-hidden flex justify-center items-center'>
             <CanvasContainer />
-            <ContactPanel className='z-1 w-50' />
+            <ContactPanel dark className='z-1 w-50' />
         </div> 
     );
 }

@@ -63,7 +63,8 @@ export default {
             'Estate Agent’s Individual Licence': '地產代理(個人)牌照'
         },
         'we have a diverse': '我們有廣博的',
-        'range of expertise': '專業知識...'
+        'range of expertise': '專業知識...',
+        'see services': '看我們的服務',
     },
     // SERVICE
     'SERVICES': {

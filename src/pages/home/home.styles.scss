@@ -1,0 +1,27 @@
+.carousel-photo {
+    height: 500px;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (max-width: 500px)  {
+        height: 300px;
+    }
+}
+
+.cross-line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 1px;
+    width: 50%;
+    display: block;
+    z-index: 0;
+}
+
+.absolute-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

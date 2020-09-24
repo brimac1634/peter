@@ -63,7 +63,8 @@ export default {
             'Estate Agent’s Individual Licence': 'Estate Agent’s Individual Licence'
         },
         'we have a diverse': 'We have a diverse',
-        'range of expertise': 'range of expertise...'
+        'range of expertise': 'range of expertise...',
+        'see services': 'see services',
     },
     // SERVICE
     'SERVICES': {

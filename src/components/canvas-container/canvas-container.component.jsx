@@ -4,7 +4,7 @@ import Canvas from '../canvas/canvas.component';
 
 import { useWindowSize } from '../../utils';
 
-const CanvasContainer = ({ className, ...otherProps }) => {
+const CanvasContainer = ({ className, color, ...otherProps }) => {
 	const [rect, setRect] = useState({
 		width: 0,
 		height: 0
@@ -23,9 +23,9 @@ const CanvasContainer = ({ className, ...otherProps }) => {
 	return (
 		<div className={`w-100 h-100 overflow-hidden absolute top-0 left-0 ${className}`} ref={container} { ...otherProps }>
 			{ rect &&
-				<Canvas rect={rect} />
+				<Canvas rect={rect} color={color} />
 			}
-			<div className='w-100 vh-100 absolute top-0 left-0' style={{backdropFilter: 'blur(1px)'}}/>
+			<div className='w-100 vh-100 absolute top-0 left-0'/>
 		</div>
 	)
 }

@@ -26,7 +26,7 @@ const Header = ({ match, history, location }) => {
         <header className={`header fixed z-2 top-0 left-0 w-100 ph3 pv2 pv2-ns ph4-m ph5-l flex items-center justify-between ${(show || !isHome) ? 'opaque' : null}`}>
             {
                 (show || !isHome) &&
-                <div className='absolute top-0 left-0 w-100 h-100' style={{backdropFilter: 'blur(2px)'}} />
+                <div className='absolute top-0 left-0 w-100 h-100' style={{backdropFilter: 'blur(3px)'}} />
             }
             <div 
                 onClick={() => {
@@ -38,7 +38,7 @@ const Header = ({ match, history, location }) => {
                 <Logo className='w3 h3' />
             </div>
             <div className='flex items-center flex-end'>
-                <span className='menu-label mr2 silver f6'>{t('HEADER.MENU')}</span>
+                <span className='menu-label mr2 near-black f6'>{t('HEADER.MENU')}</span>
                 <div className='w2 h2'>
                     <MenuButton open={open} setOpen={setOpen} />
                 </div>

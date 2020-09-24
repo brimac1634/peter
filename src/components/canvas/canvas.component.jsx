@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 import Line from './Line';
 
-const Canvas = ({ rect, ...otherProps }) => {
+const Canvas = ({ rect, color, ...otherProps }) => {
 	const canvasRef = useRef(null);
 	const { width, height } = rect;
 
@@ -18,7 +18,7 @@ const Canvas = ({ rect, ...otherProps }) => {
 			const y = (Math.random() * (height / 2) - (height / 2));
 			const xEnd = x - (width * 0.8);
 			const yEnd = y + height;
-	        linesArray.push(new Line(x,y,xEnd,yEnd,c))
+	        linesArray.push(new Line(x,y,xEnd,yEnd,c,color))
 		}
 
 	      const animate = () => {

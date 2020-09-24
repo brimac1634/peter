@@ -1,4 +1,5 @@
 .icon-circle {
+    transition: all 300ms ease-in-out;
 
     &.black {
 
@@ -15,7 +16,7 @@
         }
     }
 
-    > * {
+    > svg {
         width: 60%;
         height: 60%;
     }

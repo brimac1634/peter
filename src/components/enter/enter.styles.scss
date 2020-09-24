@@ -2,6 +2,19 @@
 	opacity: 0;
 	animation-fill-mode: forwards;
 
+	&.fade {
+		animation: fade 600ms ease-out forwards;
+
+		@keyframes fade {
+		    0% {
+		      opacity: 0;
+		    }
+		    100% {
+		      opacity: 1;
+		    }
+	    }
+	}
+
 	&.fade-up {
 		animation: fade-up 600ms ease-out forwards;
 
