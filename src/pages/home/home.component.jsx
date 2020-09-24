@@ -76,7 +76,7 @@ const Home = ({ match, history }) => {
                 {
                     HOME_LIST &&
                     HOME_LIST.map(({ title, items }, i) => (
-                        <section className='w-100 mt5 mb5 bg-near-white' key={i}>
+                        <section className='w-100 mv5 bg-near-white' key={i}>
                             <div className="w-100 w-30-ns pv3 ph4 bg-near-black">
                                 <h1 className='f3 f2-ns ttc lh-copy near-white jura fw7'>{t(`HEADER.${title}`)}</h1>
                             </div>

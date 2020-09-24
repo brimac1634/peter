@@ -8,10 +8,6 @@ const Services = ({ match }) => (
     <Switch>
         <Route exact path={match.path} component={ServicesOverview} />
         <Route path={`${match.path}/:service`} component={ServiceDetails} />
-        {/* <Route path={`${match.path}/interior-design`} component={Language} /> */}
-        {/* <Route path={`${match.path}/e&m-design`} component={Language} /> */}
-        {/* <Route path={`${match.path}/project-management`} component={Language} /> */}
-        {/* <Route path={`${match.path}/other`} component={Language} /> */}
         <Redirect to={match.path} />
     </Switch>
 )

@@ -52,7 +52,7 @@ const ServiceDetails = ({ match, history }) => {
                     <CustomButton type='button' onClick={()=>history.push(`/${i18n.language}/`)}>{t('HEADER.home')}</CustomButton>
                 </div>
             }
-            <PageBottom className='bg-moon-gray'>
+            <PageBottom className='bg-dark-gray'>
                 <ContactPanel />
             </PageBottom>
         </div>
