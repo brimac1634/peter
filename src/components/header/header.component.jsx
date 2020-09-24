@@ -38,7 +38,7 @@ const Header = ({ match, history, location }) => {
                 <Logo className='w3 h3' />
             </div>
             <div className='flex items-center flex-end'>
-                <span className='menu-label mr2 white f6'>{t('HEADER.MENU')}</span>
+                <span className='menu-label mr2 near-black f6'>{t('HEADER.MENU')}</span>
                 <div className='w2 h2'>
                     <MenuButton open={open} setOpen={setOpen} />
                 </div>

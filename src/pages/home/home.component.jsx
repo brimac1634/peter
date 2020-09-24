@@ -39,7 +39,7 @@ const Home = ({ match, history }) => {
                     </div>
                 </div>
             </section>
-            <section className='w-100 mt5 mb5 bg-near-white flex-ns'>
+            <section className='slanted w-100 mt5 mb6 bg-near-black flex-ns'>
                 <div className="w-100 w-30-ns pv3 ph4 bg-near-black">
                     <h1 className='f3 f2-ns ttc lh-copy near-white jura fw7'>{t('HOME.Hong Kongs F&B')}<br/>{t('HOME.consultancy group')}</h1>
                 </div>
@@ -72,7 +72,7 @@ const Home = ({ match, history }) => {
                     </Carousel>
                 </div>
             </section>
-            <section className='w-100'>
+            <section className='w-100 mb6'>
                 {
                     HOME_LIST &&
                     HOME_LIST.map(({ title, items }, i) => (
