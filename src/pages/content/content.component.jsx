@@ -13,17 +13,19 @@ const Contact = lazy(() => import('../contact/contact.component'));
 
 const Content = ({ match }) => (
     <div>
-        <ErrorBoundary>
-            <Suspense fallback={<Loader />}>
-                <Switch>
-                    <Route exact path={match.path} component={Home} />
-                    <Route exact path={`${match.path}/about`} component={About} />
-                    <Route path={`${match.path}/services`} component={Services} />
-                    <Route path={`${match.path}/contact`} component={Contact} />
-                    <Redirect to={match.path} />
-                </Switch>
-            </Suspense>
-        </ErrorBoundary>
+        <div className='min-vh-100'>
+            <ErrorBoundary>
+                <Suspense fallback={<Loader />}>
+                    <Switch>
+                        <Route exact path={match.path} component={Home} />
+                        <Route exact path={`${match.path}/about`} component={About} />
+                        <Route path={`${match.path}/services`} component={Services} />
+                        <Route path={`${match.path}/contact`} component={Contact} />
+                        <Redirect to={match.path} />
+                    </Switch>
+                </Suspense>
+            </ErrorBoundary>
+        </div>
         <Header />
         <Footer />
     </div>
