@@ -30,7 +30,7 @@ const Canvas = ({ rect, color, ...otherProps }) => {
 	        }
 	      }
 	      animate();
-	}, [canvasRef, rect])
+	}, [canvasRef, rect, color])
 
 	return (
 		<canvas 

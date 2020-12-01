@@ -43,7 +43,7 @@ const About = ({ match, history }) => {
                 </div>
             </section>
             <section className='w-100 mb6-ns mb5 bg-near-black'>
-                <div className='w-70 pv4 bg-near-black center'>
+                <div className='w-100 w-70-ns pv4 bg-near-black center'>
                     <Carousel showIndicator>
                         <ProgressivePhoto 
                             className='carousel-photo' 

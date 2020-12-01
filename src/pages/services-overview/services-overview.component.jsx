@@ -22,12 +22,6 @@ import './services-overview.styles.scss';
 const Services = ({ history, match }) => {
     const { t } = useTranslation();
 
-    const images = [
-        picture9,
-        picture10,
-        picture11,  
-    ];
-
     return ( 
         <div className='w-100 min-vh-100'>
             <div className='fixed top-0 left-0 w-100 vh-100 bg-near-black' style={{zIndex: -1}}>
