@@ -20,6 +20,17 @@ const Carousel = ({ children, showIndicator, disablePlay  }) => {
 			setIndex(index + 1)
 		} 
 	}, [index, children])
+
+	const previousImage = useCallback(() => {
+		const { width } = galleryItem.current.getBoundingClientRect()
+		if (index === 0) {
+			setIndex(children.length - 1)
+			setTranslation(-width * (children.length - 1))
+		} else {
+			setTranslation((index - 1) * -width)
+			setIndex(index - 1)
+		}
+	}, [index, children])
 	
 	useEffect(() => {
 		if (disablePlay) return;
@@ -43,6 +54,8 @@ const Carousel = ({ children, showIndicator, disablePlay  }) => {
 	         >
 	            {children}
 	        </div>
+			<div className='arrow left-arrow' onClick={previousImage}/>
+			<div className='arrow right-arrow' onClick={nextImage}/>
 			{
 				showIndicator &&
 				<div className='indicators'>

@@ -39,7 +39,7 @@ const Home = ({ match, history }) => {
                     </div>
                 </div>
             </section>
-            <section className='slanted w-100 mt5 mb6 bg-near-black flex-ns'>
+            <section className='w-100 mt5 mb6 bg-near-black flex-ns'>
                 <div className="w-100 w-30-ns pv3 ph4 bg-near-black">
                     <h1 className='f3 f2-ns ttc lh-copy near-white jura fw7'>{t('HOME.Hong Kongs F&B')}<br/>{t('HOME.consultancy group')}</h1>
                 </div>

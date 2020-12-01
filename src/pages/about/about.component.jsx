@@ -4,12 +4,17 @@ import { useTranslation } from 'react-i18next';
 import IconCircle from '../../components/icon-circle/icon-circle.component';
 import PageBottom from '../../components/page-bottom/page-bottom.component';
 import FlatButton from '../../components/flat-button/flat-button.component';
+import Carousel from '../../components/carousel/carousel.component';
+import ProgressivePhoto from '../../components/progressive-photo/progressive-photo.component';
 import { ReactComponent as QualificationIcon } from '../../assets/curriculum.svg'
 import { ReactComponent as StructureIcon } from '../../assets/tie.svg'
 import { ReactComponent as ExperienceIcon } from '../../assets/portfolio.svg'
 
 import { TEAMS, SHOP_TYPES, QUALIFICATIONS } from './about.data';
 
+import picture1 from '../../assets/Picture 5.png';
+import picture2 from '../../assets/Picture 6.png';
+import picture3 from '../../assets/Picture 7.png';
 import './about.styles.scss';
 
 const About = ({ match, history }) => {
@@ -35,6 +40,30 @@ const About = ({ match, history }) => {
                     <p className="ph3 ph4-ns tc f4 f3-ns lh-copy measure center jura near-white">
                         {t('ABOUT.description')}
                     </p>
+                </div>
+            </section>
+            <section className='w-100 mb6-ns mb5'>
+            <div className='w-100 pv4 bg-near-black'>
+                    <Carousel showIndicator>
+                        <ProgressivePhoto 
+                            className='carousel-photo' 
+                            src={picture2} 
+                            // overlay={banner1Overlay} 
+                            alt='banner' 
+                        />
+                        <ProgressivePhoto 
+                            className='carousel-photo' 
+                            src={picture1} 
+                            // overlay={banner1Overlay} 
+                            alt='banner' 
+                        />
+                        <ProgressivePhoto 
+                            className='carousel-photo' 
+                            src={picture3} 
+                            // overlay={banner1Overlay} 
+                            alt='banner' 
+                        />
+                    </Carousel>
                 </div>
             </section>
             <section className='w-100 mb6-ns mb5'>
