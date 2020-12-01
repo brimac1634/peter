@@ -4,13 +4,30 @@ import { useTranslation } from 'react-i18next';
 import FlatButton from '../../components/flat-button/flat-button.component';
 import FloorImage from '../../components/floor-image/floor-image.component';
 import CanvasContainer from '../../components/canvas-container/canvas-container.component';
+import Carousel from '../../components/carousel/carousel.component';
+import ProgressivePhoto from '../../components/progressive-photo/progressive-photo.component';
 
 import SERVICES from '../service-details/service-details.data';
 
+import picture9 from '../../assets/Picture 9.png';
+import picture10 from '../../assets/Picture 10.png';
+import picture11 from '../../assets/Picture 11.png';
+import picture12 from '../../assets/Picture 12.png';
+import picture13 from '../../assets/Picture 13.png';
+import picture14 from '../../assets/Picture 14.png';
+import picture15 from '../../assets/Picture 15.png';
+import picture16 from '../../assets/Picture 16.png';
 import './services-overview.styles.scss';
 
 const Services = ({ history, match }) => {
     const { t } = useTranslation();
+
+    const images = [
+        picture9,
+        picture10,
+        picture11,  
+    ];
+
     return ( 
         <div className='w-100 min-vh-100'>
             <div className='fixed top-0 left-0 w-100 vh-100 bg-near-black' style={{zIndex: -1}}>
@@ -21,6 +38,60 @@ const Services = ({ history, match }) => {
                     <h1 className='f2 f1-l lh-title jura near-white fw4'>
                         {t('SERVICES.OUR SERVICES')}
                     </h1>
+                </div>
+            </section>
+            <section className='w-100 mb4 bg-near-black'>
+                <div className='w-100 w-70-l pv4 bg-near-black center'>
+                    <Carousel showIndicator>
+                        <ProgressivePhoto 
+                            className='carousel-photo' 
+                            src={picture9} 
+                            // overlay={banner1Overlay} 
+                            alt='banner' 
+                        />
+                        <ProgressivePhoto 
+                            className='carousel-photo' 
+                            src={picture10} 
+                            // overlay={banner1Overlay} 
+                            alt='banner' 
+                        />
+                        <ProgressivePhoto 
+                            className='carousel-photo' 
+                            src={picture11} 
+                            // overlay={banner1Overlay} 
+                            alt='banner' 
+                        />
+                        <ProgressivePhoto 
+                            className='carousel-photo' 
+                            src={picture12} 
+                            // overlay={banner1Overlay} 
+                            alt='banner' 
+                        />
+                        <ProgressivePhoto 
+                            className='carousel-photo' 
+                            src={picture13} 
+                            // overlay={banner1Overlay} 
+                            alt='banner' 
+                        />
+                        <ProgressivePhoto 
+                            className='carousel-photo' 
+                            src={picture14} 
+                            // overlay={banner1Overlay} 
+                            alt='banner' 
+                        />
+                        <ProgressivePhoto 
+                            className='carousel-photo' 
+                            src={picture15} 
+                            // overlay={banner1Overlay} 
+                            alt='banner' 
+                        />
+                        <ProgressivePhoto 
+                            className='carousel-photo' 
+                            src={picture16} 
+                            // overlay={banner1Overlay} 
+                            alt='banner' 
+                        />
+                    </Carousel>
                 </div>
             </section>
             <section className='w-100 pt5 pb6'>

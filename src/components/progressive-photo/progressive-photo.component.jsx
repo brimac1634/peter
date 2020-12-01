@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ProgressivePhoto = ({ children, src, overlay, alt, className, ...otherProps }) => {
+const ProgressivePhoto = ({ children, src, overlay, alt, className, wrapperClassName, ...otherProps }) => {
     const [fullImageHasLoaded, setFullImageHasLoaded] = useState(false);
 
     const IMG_STYLE = {
@@ -14,7 +14,7 @@ const ProgressivePhoto = ({ children, src, overlay, alt, className, ...otherProp
     }
 
     return ( 
-        <div className='relative overflow-hidden'>
+        <div className={`relative overflow-hidden ${wrapperClassName}`}>
             <img
                 className={`${className}`}
                 onLoad={() => setFullImageHasLoaded(true)}
