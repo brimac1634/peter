@@ -1,14 +1,15 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 import Footer from '../../components/footer/footer.component';
 import Header from '../../components/header/header.component';
-import Home from '../home/home.component';
-import About from '../about/about.component';
-import Services from '../services/services.component';
-import Contact from '../contact/contact.component';
 import Loader from '../../components/loader/loader.component';
 import ErrorBoundary from '../../components/error-boundary/error-boundary.component';
+
+const Home = lazy(() => import('../home/home.component'));
+const About = lazy(() => import('../about/about.component'));
+const Services = lazy(() => import('../services/services.component'));
+const Contact = lazy(() => import('../contact/contact.component'));
 
 const Content = ({ match }) => (
     <div>
